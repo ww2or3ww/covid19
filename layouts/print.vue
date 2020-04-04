@@ -6,7 +6,7 @@
     </div>
     <v-container v-else>
       <v-row align="center" class="PrintMeta">
-        <v-col :cols="12" :sm="6">
+        <v-col :cols="12" :sm="6" class="PrintMeta-Column">
           <div class="PrintMeta-HeadingWrapper">
             <div class="PrintMeta-Logo">
               <img src="/hamamatsu/logo.svg" :alt="$t('浜松市')" />
@@ -16,7 +16,7 @@
             </h1>
           </div>
         </v-col>
-        <v-col :cols="12" :sm="6">
+        <v-col :cols="12" :sm="6" class="PrintMeta-Column">
           <v-card class="d-flex flex-row" flat tile color="transparent">
             <v-spacer />
             <v-card
@@ -111,6 +111,21 @@ export default Vue.extend({
 <style lang="scss" scoped>
 .PrintMeta {
   margin-bottom: 1em;
+
+  @media print {
+    flex-wrap: nowrap;
+  }
+
+  &-Column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    @media print {
+      width: auto;
+      flex-basis: auto;
+      flex-grow: 1;
+    }
+  }
 
   &-HeadingWrapper {
     display: flex;
