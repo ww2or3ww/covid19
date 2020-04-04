@@ -2,7 +2,6 @@
 
 import re
 import json
-from collections import OrderedDict
 import requests
 from html.parser import HTMLParser
 
