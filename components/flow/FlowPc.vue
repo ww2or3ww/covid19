@@ -86,6 +86,10 @@ export default {
   display: flex;
   flex-direction: column;
 
+  @media print {
+    display: block;
+  }
+
   @include card-container();
 
   padding: 20px;
@@ -144,6 +148,13 @@ export default {
     }
 
     margin-bottom: 36px;
+
+    @media print {
+      page-break-after: always;
+      & + h3 {
+        margin-top: 36px;
+      }
+    }
   }
 
   &Lower {
