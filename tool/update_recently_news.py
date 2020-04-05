@@ -101,12 +101,12 @@ class NewsParser(HTMLParser):
     def handle_data(self, data):
         if self.listInDay and not self.link:
             data = data.strip()
-            if data and self.lasttag == 'a':
-               text = self.news[-1].get("text")
-               self.news[-1].update({"text": text + data.strip()})
-               return
             if data and self.lasttag == 'li':
                self.news.append({"date": self.currentDate,"url":"","text": data})
+               return
+            if data:
+               text = self.news[-1].get("text")
+               self.news[-1].update({"text": text + data.strip()})
                return
         if self.link:
             self.news[-1].update({"text": data.strip() + self.supplement})
