@@ -26,6 +26,13 @@ export default {
       iso: 'en-US',
       file: 'en.json',
       description: 'English'
+    },
+    {
+      code: 'pt-br',
+      name: 'Portuguese',
+      iso: 'pt-BR',
+      file: 'pt_BR.json',
+      description: 'Portuguese'
     }
   ]
 }
