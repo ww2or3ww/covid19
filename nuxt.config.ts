@@ -53,6 +53,7 @@ const config: Configuration = {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/hamamatsu/favicon.ico' },
+      { rel: 'shortcut icon', type: 'image/x-icon', href: '/hamamatsu/favicon.ico' },
       { rel: 'apple-touch-icon', href: '/hamamatsu/apple-touch-icon.png' },
       {
         rel: 'stylesheet',
