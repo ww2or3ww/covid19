@@ -53,7 +53,8 @@ const config: Configuration = {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/hamamatsu/favicon.ico' },
-      { rel: 'apple-touch-icon', href: '/apple-touch-icon-precomposed.png' },
+      { rel: 'shortcut icon', type: 'image/x-icon', href: '/hamamatsu/favicon.ico' },
+      { rel: 'apple-touch-icon', href: '/hamamatsu/apple-touch-icon.png' },
       {
         rel: 'stylesheet',
         href: 'https://use.fontawesome.com/releases/v5.6.1/css/all.css'
@@ -150,12 +151,18 @@ const config: Configuration = {
   },
   manifest: {
     name: '浜松市 新型コロナウイルス感染症対策サイト',
+    description: '浜松市 新型コロナウイルス感染症対策サイト',
     theme_color: '#00a040',
     background_color: '#ffffff',
     display: 'standalone',
     Scope: '/',
     start_url: '/',
     splash_pages: null
+  },
+  pwa: {
+    icon: {
+      iconSrc: 'static/hamamatsu/icon.png'
+    }
   },
   generate: {
     fallback: true,
