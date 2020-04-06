@@ -13,6 +13,7 @@
           :href="item.url"
           target="_blank"
           rel="noopener noreferrer"
+          v-if="item.url"
         >
           <time
             class="WhatsNew-list-item-anchor-time px-2"
@@ -31,6 +32,17 @@
             </v-icon>
           </span>
         </a>
+        <div v-else class="WhatsNew-list-item-anchor">
+          <time
+            class="WhatsNew-list-item-anchor-time px-2"
+            :datetime="formattedDate(item.date)"
+          >
+            {{ item.date }}
+          </time>
+          <span class="WhatsNew-list-item-anchor-label">
+            {{ item.text }}
+          </span>
+        </div>
       </li>
     </ul>
   </div>
@@ -48,6 +60,9 @@ export default Vue.extend({
     }
   },
   methods: {
+    isEmptyLink(url: string): boolean {
+      return url.length == 0
+    },
     isInternalLink(path: string): boolean {
       return !/^https?:\/\//.test(path)
     },
@@ -107,6 +122,16 @@ export default Vue.extend({
         color: $gray-1;
       }
 
+      &-label {
+        flex: 0 0 90px;
+
+        @include lessThan($medium) {
+          flex: 0 0 100%;
+        }
+
+        color: $gray-1;
+      }
+
       &-link {
         flex: 0 1 auto;
 
@@ -120,6 +145,30 @@ export default Vue.extend({
       &-ExternalLinkIcon {
         margin-left: 2px;
         color: $gray-3 !important;
+      }
+    }
+
+    &-label {
+      display: inline-block;
+      text-decoration: none;
+      margin: 5px;
+      font-size: 14px;
+
+      &-time {
+        flex: 0 0 90px;
+
+        @include lessThan($medium) {
+          flex: 0 0 100%;
+        }
+
+        color: $gray-1;
+      }
+      &-text {
+        flex: 0 1 auto;
+
+        @include lessThan($medium) {
+          padding-left: 8px;
+        }
       }
     }
   }
