@@ -4,6 +4,16 @@
 本ソフトウェアは、[MITライセンス](./LICENSE.txt)の元提供されています。
 
 
+## コミュニケーションへの参加方法
+
+浜松版Covid19対策サイトの運営方法や開発に関する議論はSlackにて行っています。
+
+Slack アカウントを持っていない場合、[こちら](https://join.slack.com/t/jaws-ug-hamamatsu/shared_invite/zt-dc5cgs87-cNw8QOxXeqhJnB8YB8A6Uw)から登録してください.
+
+
+`#code_for_hamamatsu` チャンネルにご参加ください。
+
+
 ## 開発者向け情報
 
 ### 環境構築の手順
