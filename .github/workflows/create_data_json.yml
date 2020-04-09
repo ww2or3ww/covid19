@@ -21,19 +21,12 @@ jobs:
     steps:
     # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
     - uses: actions/checkout@v2
-
-    - name: Set up Python 3.6
-      uses: actions/setup-python@v1
       with:
-        python-version: 3.6
-    - name: Install dependencies
-      run: |
-        python -m pip install --upgrade pip
-    - run: pip install requests
+        ref: dev-hamamatsu
       
     - name: RUN PYTHON SCRIPT
       run: |
-        python -c "import os; os.chdir('tool'); import create_data_json; x = create_data_json.process(); print(x)" > data/hamamatsu/data.json
+        python3 -c "import os; os.chdir('tool'); import create_data_json; x = create_data_json.process(); print(x)" > data/hamamatsu/data.json
         
     - name: COMMIT
       run: |
