@@ -41,7 +41,8 @@ jobs:
         git config --local user.name "github-actions[bot]"
         git add data/hamamatsu/data2.json
         git commit -m "[BOT] Update data.json" || true
-        git pull
+        git fetch origin dev-hamamatsu
+        git merge
 
     - name: PUSH
       uses: ad-m/github-push-action@master
