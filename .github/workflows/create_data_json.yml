@@ -33,20 +33,19 @@ jobs:
       
     - name: RUN PYTHON SCRIPT
       run: |
-        python -c "import os; os.chdir('tool'); import create_data_json; x = create_data_json.process(); print(x)" > data/hamamatsu/data2.json
+        python -c "import os; os.chdir('tool'); import create_data_json; x = create_data_json.process(); print(x)" > data/hamamatsu/data.json
         
     - name: COMMIT
       run: |
         git config --local user.email "github-actions[bot]@users.noreply.github.com"
         git config --local user.name "github-actions[bot]"
-        git add data/hamamatsu/data2.json
+        git add data/hamamatsu/data.json
         git commit -m "[BOT] Update data.json" || true
-        git pull
+        git fetch origin dev-hamamatsu
+        git merge
 
     - name: PUSH
       uses: ad-m/github-push-action@master
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         branch: 'dev-hamamatsu'
-
-
