@@ -3,29 +3,26 @@
 name: news.json builder
 
 on:
-  pull_request:
-    branches:
-      - prod-hamamatsu
-    types:
-      - opened
-      - synchronize
+  schedule:
+    - cron:  '0 9,12,15,18,21 * * *'
 jobs:
-  update_json:
+  check_news:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
       with:
-        ref: ${{github.event.pull_request.head.ref}}
-    - name: create news.json from anouncement
+        ref: dev-hamamatsu
+    - name: create news_update.json from anouncement
       run: |
         python3 tool/create_news_json.py > data/hamamatsu/news.json
-    - name: Commit files
+    - name: commit news.json if update 
       run: |
         git config --local user.email "github-actions[bot]@users.noreply.github.com"
         git config --local user.name "github-actions[bot]"
         git add data/hamamatsu/news.json
         git commit -m "[BOT] Update news.json" || true
-        git pull
+        git fetch origin dev-hamamatsu
+        git merge
     - name: Push changes
       uses: ad-m/github-push-action@master
       with:
