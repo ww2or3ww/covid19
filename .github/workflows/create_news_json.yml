@@ -1,7 +1,8 @@
 # This is a workflow to create news.json with Actions
 
 name: news.json builder
-
+env:
+  TZ: Asia/Tokyo
 on:
   schedule:
     - cron:  '0 9,12,15,18,21 * * *'
