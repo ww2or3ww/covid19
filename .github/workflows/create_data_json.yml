@@ -26,7 +26,7 @@ jobs:
       
     - name: RUN PYTHON SCRIPT
       run: |
-        python3 -c "import os; os.chdir('tool'); import create_data_json; x = create_data_json.process(); print(x)" > data/hamamatsu/data.json
+        python3 -c "import os; os.chdir('tool'); import create_data_json; x = create_data_json.process('${{ secrets.APIKEY_CSV2JSON }}'); print(x)" > data/hamamatsu/data.json
         
     - name: COMMIT
       run: |
