@@ -1,34 +1,22 @@
-# This is a basic workflow to help you get started with Actions
-
+# This is a workflow to create data.json with Actions	
 name: data.json builder
-
-# Controls when the action will run. Triggers the workflow on push or pull request
-# events but only for the master branch
+env:
+  TZ: Asia/Tokyo
 on:
-  push:
-    branches: [ dev-hamamatsu ]
-  pull_request:
-    branches: [ dev-hamamatsu ]
-
-# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+  schedule:
+    - cron:  '0 * * * *'
 jobs:
-  # This workflow contains a single job called "build"
-  build:
-    # The type of runner that the job will run on
+  check_data:
     runs-on: ubuntu-latest
-
-    # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-    # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
     - uses: actions/checkout@v2
       with:
         ref: dev-hamamatsu
-      
-    - name: RUN PYTHON SCRIPT
+    - name: RUN PYTHON SCRIPT(create data.json)
       run: |
-        python3 -c "import os; os.chdir('tool'); import create_data_json; x = create_data_json.process(); print(x)" > data/hamamatsu/data.json
+        python3 -c "import os; os.chdir('tool'); import create_data_json; x = create_data_json.process('${{ secrets.APIKEY_CSV2JSON }}'); print(x)" > data/hamamatsu/data.json
         
-    - name: COMMIT
+    - name: commit data.json if update
       run: |
         git config --local user.email "github-actions[bot]@users.noreply.github.com"
         git config --local user.name "github-actions[bot]"
@@ -37,7 +25,7 @@ jobs:
         git fetch origin dev-hamamatsu
         git merge
 
-    - name: PUSH
+    - name: PUSH changes
       uses: ad-m/github-push-action@master
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
