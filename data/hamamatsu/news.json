@@ -1,19 +1,19 @@
 {
   "newsItems": [
     {
-      "date": "2020/04/13",
-      "url": "https://www.city.hamamatsu.shizuoka.jp/koho2/emergency/covid-19/kyoiku.html",
-      "text": "家庭学習の支援サイトをまとめました"
+      "date": "2020/04/14",
+      "url": "",
+      "text": "新型コロナウイルスに関するPCR検査実施状況（4月14日現在）2月14日～4月14日　433件"
     },
     {
-      "date": "2020/04/13",
+      "date": "2020/04/14",
       "url": "https://www.city.hamamatsu.shizuoka.jp/koho2/emergency/korona_event4.html",
       "text": "市主催等のイベント開催中止・延期"
     },
     {
       "date": "2020/04/13",
-      "url": "",
-      "text": "新型コロナウイルスに関するPCR検査実施状況（4月13日現在）2月14日～4月12日　376件"
+      "url": "https://www.city.hamamatsu.shizuoka.jp/koho2/emergency/covid-19/kyoiku.html",
+      "text": "家庭学習の支援サイトをまとめました"
     },
     {
       "date": "2020/04/10",
@@ -24,16 +24,6 @@
       "date": "2020/04/10",
       "url": "",
       "text": "当ページに「行動記録票」、「健康観察票」を追加しました。"
-    },
-    {
-      "date": "2020/04/09",
-      "url": "https://www.city.hamamatsu.shizuoka.jp/koho2/emergency/korona_kanjya.html",
-      "text": "新型コロナウイルス感染症による患者確認について"
-    },
-    {
-      "date": "2020/04/09",
-      "url": "https://www.city.hamamatsu.shizuoka.jp/koho2/emergency/korona_shisetsu.html",
-      "text": "施設の臨時休館"
     }
   ]
 }
