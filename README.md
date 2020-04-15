@@ -72,9 +72,9 @@ $ docker-compose run --rm app yarn install
 
 ### ステージング・本番環境への反映
 
-`prod-hamamatsu` ブランチがアップデートされると、自動的にNetlifyにより、本番サイト https://stopcovid19-hamamatsu.netlify.com/ が更新されます。
+`prod-hamamatsu` ブランチがアップデートされると、自動的にNetlifyにより、本番サイト https://stopcovid19.code4hamamatsu.org/ が更新されます。
 
-`dev-hamamatsu` ブランチがアップデートされると、自動的にNetlifyにより、開発用サイト https://dev-stopcovid19-hamamatsu.netlify.com/ が更新されます。
+`dev-hamamatsu` ブランチがアップデートされると、自動的にNetlifyにより、開発用サイト https://dev-stopcovid19.code4hamamatsu.org/ が更新されます。
 
 ### ブランチルール
 
@@ -87,12 +87,12 @@ Pull Request を送る際の branch は、以下のネーミングルールで�
 #### 基本的なブランチ
 | 目的 | ブランチ | 確認URL | 備考 |
 | ---- | -------- | ---- | ---- |
-| 開発 | dev-hamamatsu | https://dev-stopcovid19-hamamatsu.netlify.com/ | base branch。基本はこちらに Pull Requestを送ってください |
+| 開発 | dev-hamamatsu | https://dev-stopcovid19.code4hamamatsu.org/ | base branch。基本はこちらに Pull Requestを送ってください |
 | 緊急適用用 | dev-hotfix | なし | 急ぎ本番に適用するべき修正。管理者から依頼された場合こちらを使ってください |
-| 本番 | prod-hamamatsu | https://stopcovid19-hamamatsu.netlify.com/ | 管理者以外の Pull Request は禁止です |
+| 本番 | prod-hamamatsu | https://stopcovid19.code4hamamatsu.org/ | 管理者以外の Pull Request は禁止です |
 
 #### システムで利用しているブランチ
 | 目的 | ブランチ | 確認URL | 備考 |
 | ---- | -------- | ---- | ---- |
-| 本番サイトHTML | prod-hamamatsu | https://stopcovid19-hamamatsu.netlify.com/ | 静的ビルドされたHTMLが置いてある場所 |
+| 本番サイトHTML | prod-hamamatsu | https://stopcovid19.code4hamamatsu.org/ | 静的ビルドされたHTMLが置いてある場所 |
 | OGP作業用 | deploy/new_ogp | なし | OGPの更新用 |
