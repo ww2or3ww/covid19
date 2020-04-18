@@ -8,8 +8,6 @@ COPY package.json yarn.lock $PROJECT_ROOTDIR
 
 RUN yarn install
 
-RUN apk add git
-
 COPY . $PROJECT_ROOTDIR
 
 EXPOSE 3000
