@@ -154,7 +154,7 @@ export default {
     return data
   },
   head() {
-    const url = 'https://stopcovid19-hamamatsu.netlify.com'
+    const url = 'https://stopcovid19.code4hamamatsu.org'
     const timestamp = new Date().getTime()
     const ogpImage =
       this.$i18n.locale === 'ja'
