@@ -23,7 +23,7 @@ const config: Configuration = {
       {
         hid: 'og:url',
         property: 'og:url',
-        content: 'https://stopcovid19-hamamatsu.netlify.com/'
+        content: 'https://https://stopcovid19.code4hamamatsu.org/'
       },
       {
         hid: 'twitter:card',

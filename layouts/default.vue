@@ -87,7 +87,7 @@ export default Vue.extend({
       link: [
         {
           rel: 'canonical',
-          href: `https://stopcovid19-hamamatsu.netlify.com${this.$route.path}`
+          href: `https://stopcovid19.code4hamamatsu.org${this.$route.path}`
         },
         {
           rel: 'stylesheet',
@@ -120,7 +120,7 @@ export default Vue.extend({
         {
           hid: 'og:url',
           property: 'og:url',
-          content: `https://stopcovid19-hamamatsu.netlify.com/${this.$route.path}`
+          content: `https://stopcovid19.code4hamamatsu.org/${this.$route.path}`
         },
         {
           hid: 'og:locale',
