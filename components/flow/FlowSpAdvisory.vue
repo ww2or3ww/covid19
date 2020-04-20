@@ -3,7 +3,7 @@
     <h4 id="consult" :class="[$style.heading, $style.fzXLarge]">
       {{ $t('新型コロナ受診相談窓口（日本語のみ）') }}
       <small :class="[$style.break, $style.fzRegular, $style.mt5]">{{
-        $t('hamamatsu.帰国者・接触者 電話相談センター')
+        $t('帰国者・接触者 電話相談センター')
       }}</small>
     </h4>
     <p :class="[$style.open, $style.fzMedium]">
@@ -27,7 +27,7 @@
           <ul :class="[$style.night]">
             <li>
               <span :class="[$style.fzMedium, $style.break, $style.mb10]">
-                {{ $t('hamamatsu.平日・土日祝') }}
+                {{ $t('平日・土日祝') }}
               </span>
               {{ $t('24時間対応') }}
             </li>

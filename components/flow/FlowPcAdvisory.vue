@@ -8,7 +8,7 @@
           }}</span>
         </div>
         <div :class="[$style.AdvisoryContentsColsSentense, 'mt-4']">
-          {{ $t('hamamatsu.帰国者・接触者 電話相談センター') }}
+          {{ $t('帰国者・接触者 電話相談センター') }}
         </div>
         <div>
           <div :class="[$style.AdvisoryBoxContainer, $style.AdvisoryWhiteBox]">
@@ -33,7 +33,7 @@
               target="_blank"
               rel="noopener noreferrer"
             >
-              <span>{{ $t('hamamatsu.お電話の前に「新型コロナウイルス感染症について」のページをご覧いただき、必要な対応をご検討ください。') }}</span>
+              <span>{{ $t('お電話の前に「新型コロナウイルス感染症について」のページをご覧いただき、必要な対応をご検討ください。') }}</span>
               <v-icon size="18">
                 mdi-open-in-new
               </v-icon>
@@ -45,7 +45,7 @@
       <div :class="$style.AdvisoryContents">
         <div class="pt-8">
           <div :class="$style.AdvisoryContentsTitle2">
-            {{ $t('hamamatsu.平日・土日祝') }}
+            {{ $t('平日・土日祝') }}
           </div>
           <span>{{ $t('24時間対応') }}</span>
         </div>

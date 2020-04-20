@@ -71,7 +71,7 @@
         <!-- eslint-enable -->
       </span>
       <span :class="$style.break">
-        {{ $t('hamamatsu.帰国者・接触者 電話相談センター') }}
+        {{ $t('帰国者・接触者 電話相談センター') }}
       </span>
       <small :class="[$style.note, $style.fzSmall, $style.break]">
         {{
