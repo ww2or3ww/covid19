@@ -1,9 +1,29 @@
 {
   "newsItems": [
     {
-      "date": "2020/04/20",
+      "date": "2020/04/21",
       "url": "",
-      "text": "新型コロナウイルスに関するPCR検査実施状況（4月20日現在）2月14日～4月20日　548件"
+      "text": "新型コロナウイルスに関するPCR検査実施状況（4月21日現在）2月14日～4月21日　578件"
+    },
+    {
+      "date": "2020/04/21",
+      "url": "https://www.city.hamamatsu.shizuoka.jp/koho2/emergency/korona_kinkyu.html",
+      "text": "新型コロナウイルス感染症拡大防止・緊急経済対策"
+    },
+    {
+      "date": "2020/04/21",
+      "url": "https://www.city.hamamatsu.shizuoka.jp/sangyoshinko/shougyo2.html",
+      "text": "浜松市の休業要請に基づく協力金の支給"
+    },
+    {
+      "date": "2020/04/21",
+      "url": "https://www.city.hamamatsu.shizuoka.jp/kanko/corona_hojyo/index.html",
+      "text": "飲食店等応援プロジェクト　提案事業費補助金"
+    },
+    {
+      "date": "2020/04/21",
+      "url": "https://www.city.hamamatsu.shizuoka.jp/kiki/kaigi_1.html",
+      "text": "第7回浜松市新型コロナウイルス感染症対策本部会議"
     },
     {
       "date": "2020/04/20",
@@ -14,16 +34,6 @@
       "date": "2020/04/20",
       "url": "https://www.city.hamamatsu.shizuoka.jp/koho2/emergency/korona_event4.html",
       "text": "市主催等のイベント開催中止・延期"
-    },
-    {
-      "date": "2020/04/17",
-      "url": "https://www.city.hamamatsu.shizuoka.jp/koho2/emergency/korona_shicho0417.html",
-      "text": "浜松市長から市内外の皆さまへのメッセージ（4月17日）"
-    },
-    {
-      "date": "2020/04/13",
-      "url": "https://www.city.hamamatsu.shizuoka.jp/koho2/emergency/covid-19/kyoiku.html",
-      "text": "家庭学習の支援サイトをまとめました"
     }
   ]
 }
