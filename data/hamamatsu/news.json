@@ -2,6 +2,11 @@
   "newsItems": [
     {
       "date": "2020/04/21",
+      "url": "",
+      "text": "新型コロナウイルスに関するPCR検査実施状況（4月21日現在）2月14日～4月21日　578件"
+    },
+    {
+      "date": "2020/04/21",
       "url": "https://www.city.hamamatsu.shizuoka.jp/koho2/emergency/korona_kinkyu.html",
       "text": "新型コロナウイルス感染症拡大防止・緊急経済対策"
     },
@@ -19,11 +24,6 @@
       "date": "2020/04/21",
       "url": "https://www.city.hamamatsu.shizuoka.jp/kiki/kaigi_1.html",
       "text": "第7回浜松市新型コロナウイルス感染症対策本部会議"
-    },
-    {
-      "date": "2020/04/20",
-      "url": "",
-      "text": "新型コロナウイルスに関するPCR検査実施状況（4月20日現在）2月14日～4月20日　548件"
     },
     {
       "date": "2020/04/20",
