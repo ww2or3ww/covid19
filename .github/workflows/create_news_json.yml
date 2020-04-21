@@ -1,11 +1,12 @@
-# This is a workflow to create news.json with Actions
+# This is a workflow to create news|data.json and deploy with Actions
 
-name: news.json builder
+name: news.json builder and deploy
 env:
   TZ: Asia/Tokyo
 on:
   schedule:
-    - cron:  '0 9,12,15,18,21 * * *'
+    # マージされてから設定しなおす
+    - cron:  '0 12 1 5 *'
 jobs:
   check_news:
     runs-on: ubuntu-latest
@@ -13,19 +14,35 @@ jobs:
     - uses: actions/checkout@v2
       with:
         ref: dev-hamamatsu
-    - name: create news_update.json from anouncement
-      run: |
-        python3 tool/create_news_json.py > data/hamamatsu/news.json
-    - name: commit news.json if update 
-      run: |
-        git config --local user.email "github-actions[bot]@users.noreply.github.com"
-        git config --local user.name "github-actions[bot]"
-        git add data/hamamatsu/news.json
-        git commit -m "[BOT] Update news.json" || true
-        git fetch origin dev-hamamatsu
-        git merge
-    - name: Push changes
-      uses: ad-m/github-push-action@master
+        path: development
+    - uses: actions/checkout@v2
       with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-        branch: dev-hamamatsu
+        ref: prod-hamamatsu
+        path: production
+    - name: RUN PYTHON SCRIPT(create news.json)
+      run: python3 development/tool/create_news_json.py > development/data/hamamatsu/news.json
+# 同じタイミングでデプロイしたい
+#    - name: RUN PYTHON SCRIPT(create data.json)
+#      run: python3 -c "import os; os.chdir('development/tool'); import create_data_json; x = create_data_json.process('${{ secrets.APIKEY_CSV2JSON }}'); print(x)" > development/data/hamamatsu/data.json
+    - name: copy json dev to prod
+      run: cp -rf development/data/hamamatsu/* production/data/hamamatsu/
+    - name: Create Pull Request dev-hamamatsu
+      uses: peter-evans/create-pull-request@v2
+      with:
+        token: ${{ secrets.GITHUB_TOKEN }}
+        path: development
+        commit-message: BOT; UPDATE WHATS NEW
+        title: BOT; UPDATE WHATS NEW to dev-hamamatsu
+        base: dev-hamamatsu
+        branch: data-bot/dev-hamamatsu
+        labels: auto_merge
+    - name: Create Pull Request prod-hamamatsu
+      uses: peter-evans/create-pull-request@v2
+      with:
+        token: ${{ secrets.GITHUB_TOKEN }}
+        path: production
+        commit-message: BOT; UPDATE WHATS NEW
+        title: BOT; UPDATE WHATS NEW to prod-hamamatsu
+        base: prod-hamamatsu
+        branch: data-bot/prod-hamamatsu
+        labels: auto_merge
