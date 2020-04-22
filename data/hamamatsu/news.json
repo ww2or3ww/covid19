@@ -1,6 +1,16 @@
 {
   "newsItems": [
     {
+      "date": "2020/04/22",
+      "url": "https://www.city.hamamatsu.shizuoka.jp/koho2/emergency/korona_shisetsu.html",
+      "text": "施設の臨時休館"
+    },
+    {
+      "date": "2020/04/22",
+      "url": "https://www.city.hamamatsu.shizuoka.jp/koho2/emergency/korona_event4.html",
+      "text": "市主催等のイベント開催中止・延期"
+    },
+    {
       "date": "2020/04/21",
       "url": "",
       "text": "新型コロナウイルスに関するPCR検査実施状況（4月21日現在）2月14日～4月21日　578件"
@@ -24,16 +34,6 @@
       "date": "2020/04/21",
       "url": "https://www.city.hamamatsu.shizuoka.jp/kiki/kaigi_1.html",
       "text": "第7回浜松市新型コロナウイルス感染症対策本部会議"
-    },
-    {
-      "date": "2020/04/20",
-      "url": "https://www.city.hamamatsu.shizuoka.jp/koho2/emergency/korona_shisetsu.html",
-      "text": "施設の臨時休館"
-    },
-    {
-      "date": "2020/04/20",
-      "url": "https://www.city.hamamatsu.shizuoka.jp/koho2/emergency/korona_event4.html",
-      "text": "市主催等のイベント開催中止・延期"
     }
   ]
 }
