@@ -224,7 +224,7 @@
   "ご高齢な方": "Idoso",
   "基礎疾患のある方": "Portador de doença crônica",
   "妊娠中の方": "Gestante",
-  "新型コロナ外来 {advice} と判断された場合": "Caso seja determinado {advice} em ambulatório pro Novo Coronavírus",
+  "新型コロナ外来 {advice} と判断された場合": "Caso seja determinado {advice} em ambulatório para Novo Coronavírus",
   "受診が不要": "Desnecessita de avaliação clínica",
   "{getWorse}{advisory}に相談": "Informe-se no {getWorse}{advisory}",
   "症状が良くならない場合は": "Caso os sintomas persistirem, ",
