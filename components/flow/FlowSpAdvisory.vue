@@ -16,7 +16,7 @@
           target="_blank"
           rel="noopener noreferrer"
         >
-          {{ $t('hamamatsu.お電話の前に「新型コロナウイルス感染症について」のページをご覧いただき、必要な対応をご検討ください。') }}
+          {{ $t('お電話の前に「新型コロナウイルス感染症について」のページをご覧いただき、必要な対応をご検討ください。') }}
           <v-icon size="16">
             mdi-open-in-new
           </v-icon>
