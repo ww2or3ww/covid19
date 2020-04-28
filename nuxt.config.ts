@@ -53,7 +53,11 @@ const config: Configuration = {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/hamamatsu/favicon.ico' },
-      { rel: 'shortcut icon', type: 'image/x-icon', href: '/hamamatsu/favicon.ico' },
+      {
+        rel: 'shortcut icon',
+        type: 'image/x-icon',
+        href: '/hamamatsu/favicon.ico'
+      },
       { rel: 'apple-touch-icon', href: '/hamamatsu/apple-touch-icon.png' },
       {
         rel: 'stylesheet',
@@ -167,7 +171,7 @@ const config: Configuration = {
   generate: {
     fallback: true,
     routes() {
-      const locales = ['ja', 'en', 'pt-br']
+      const locales = ['ja', 'ja-basic', 'en', 'pt-br']
       const pages = [
         '/cards/details-of-confirmed-cases',
         '/cards/details-of-tested-cases',

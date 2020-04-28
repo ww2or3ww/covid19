@@ -1,12 +1,22 @@
 {
   "newsItems": [
     {
-      "date": "2020/04/26",
+      "date": "2020/04/28",
       "url": "",
-      "text": "新型コロナウイルスに関するPCR検査実施状況（4月26日現在）2月14日～4月26日　669件"
+      "text": "新型コロナウイルスに関するPCR検査実施状況（4月28日現在）2月14日～4月28日　713件"
     },
     {
-      "date": "2020/04/24",
+      "date": "2020/04/28",
+      "url": "https://www.city.hamamatsu.shizuoka.jp/koho2/emergency/korona_shisetsu.html",
+      "text": "施設の臨時休館更新しました"
+    },
+    {
+      "date": "2020/04/28",
+      "url": "https://www.city.hamamatsu.shizuoka.jp/kiki/kyuugyouyousei.html",
+      "text": "休業要請対象施設の追加について"
+    },
+    {
+      "date": "2020/04/28",
       "url": "https://www.city.hamamatsu.shizuoka.jp/koho2/emergency/korona_event4.html",
       "text": "市主催等のイベント開催中止・延期"
     },
@@ -29,11 +39,6 @@
       "date": "2020/04/23",
       "url": "https://www.city.hamamatsu.shizuoka.jp/somu/taiou09.html",
       "text": "緊急事態宣言発令に伴う放課後児童会の利用自粛（4月22日付）"
-    },
-    {
-      "date": "2020/04/23",
-      "url": "https://www.city.hamamatsu.shizuoka.jp/koho2/emergency/korona_shisetsu.html",
-      "text": "施設の臨時休館"
     }
   ]
 }
