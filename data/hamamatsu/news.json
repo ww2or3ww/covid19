@@ -1,9 +1,24 @@
 {
   "newsItems": [
     {
-      "date": "2020/04/28",
+      "date": "2020/04/30",
+      "url": "https://www.city.hamamatsu.shizuoka.jp/fukushisomu/tokubetsuteigaku.html",
+      "text": "「特別定額給付金事務局」の設置及び「新型コロナコールセンター」の開設"
+    },
+    {
+      "date": "2020/04/30",
+      "url": "https://www.city.hamamatsu.shizuoka.jp/sangyosomu/kochoukinsoudan.html",
+      "text": "雇用調整助成金等に関する相談窓口のご案内"
+    },
+    {
+      "date": "2020/04/30",
+      "url": "https://www.city.hamamatsu.shizuoka.jp/koho2/emergency/korona_event4.html",
+      "text": "市主催等のイベント開催中止・延期"
+    },
+    {
+      "date": "2020/04/30",
       "url": "",
-      "text": "新型コロナウイルスに関するPCR検査実施状況（4月28日現在）2月14日～4月28日　713件"
+      "text": "新型コロナウイルスに関するPCR検査実施状況（4月30日現在）2月14日～4月30日　734件"
     },
     {
       "date": "2020/04/28",
@@ -14,11 +29,6 @@
       "date": "2020/04/28",
       "url": "https://www.city.hamamatsu.shizuoka.jp/kiki/kyuugyouyousei.html",
       "text": "休業要請対象施設の追加について"
-    },
-    {
-      "date": "2020/04/28",
-      "url": "https://www.city.hamamatsu.shizuoka.jp/koho2/emergency/korona_event4.html",
-      "text": "市主催等のイベント開催中止・延期"
     },
     {
       "date": "2020/04/24",
@@ -34,11 +44,6 @@
       "date": "2020/04/24",
       "url": "https://www.city.hamamatsu.shizuoka.jp/kosodate/20200423.html",
       "text": "【配偶者からの暴力を理由に避難している方へ】　特別定額給付金に関するお知らせ"
-    },
-    {
-      "date": "2020/04/23",
-      "url": "https://www.city.hamamatsu.shizuoka.jp/somu/taiou09.html",
-      "text": "緊急事態宣言発令に伴う放課後児童会の利用自粛（4月22日付）"
     }
   ]
 }
