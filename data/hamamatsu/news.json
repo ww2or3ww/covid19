@@ -2,6 +2,11 @@
   "newsItems": [
     {
       "date": "2020/05/01",
+      "url": "https://www.city.hamamatsu.shizuoka.jp/sangyoshinko/shougyo2.html",
+      "text": "浜松市の休業要請に基づく協力金の支給について"
+    },
+    {
+      "date": "2020/05/01",
       "url": "https://www.city.hamamatsu.shizuoka.jp/somu/taiou11.html",
       "text": "市立小中学校及び市立高等学校の臨時休業の延長"
     },
