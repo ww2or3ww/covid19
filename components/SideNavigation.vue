@@ -153,6 +153,11 @@ export default Vue.extend({
           divider: true
         },
         {
+          title: this.$t('特別定額給付金事務局及び新型コロナコールセンター'),
+          link:
+            'https://www.city.hamamatsu.shizuoka.jp/fukushisomu/tokubetsuteigaku.html'
+        },
+        {
           title: this.$t('浜松市新型コロナウイルス感染症対策本部会議'),
           link: 'https://www.city.hamamatsu.shizuoka.jp/kiki/kaigi_1.html'
         },
