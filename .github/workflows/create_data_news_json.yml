@@ -1,12 +1,11 @@
 # This is a workflow to create news|data.json and deploy with Actions
 
-name: news.json builder and deploy
+name: data.json news.json builder and deploy
 env:
   TZ: Asia/Tokyo
 on:
   schedule:
-    # マージされてから設定しなおす
-    - cron:  '0 12 1 5 *'
+    - cron:  '0 6-24 * * *'
 jobs:
   check_news:
     runs-on: ubuntu-latest
@@ -21,9 +20,8 @@ jobs:
         path: production
     - name: RUN PYTHON SCRIPT(create news.json)
       run: python3 development/tool/create_news_json.py > development/data/hamamatsu/news.json
-# 同じタイミングでデプロイしたい
-#    - name: RUN PYTHON SCRIPT(create data.json)
-#      run: python3 -c "import os; os.chdir('development/tool'); import create_data_json; x = create_data_json.process('${{ secrets.APIKEY_CSV2JSON }}'); print(x)" > development/data/hamamatsu/data.json
+    - name: RUN PYTHON SCRIPT(create data.json)
+      run: python3 -c "import os; os.chdir('development/tool'); import create_data_json; x = create_data_json.process('${{ secrets.APIKEY_CSV2JSON }}'); print(x)" > development/data/hamamatsu/data.json
     - name: copy json dev to prod
       run: cp -rf development/data/hamamatsu/* production/data/hamamatsu/
     - name: Create Pull Request dev-hamamatsu
