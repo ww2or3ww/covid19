@@ -5,7 +5,7 @@ env:
   TZ: Asia/Tokyo
 on:
   schedule:
-    - cron:  '0 6-24 * * *'
+    - cron:  '0 * * * *'
 jobs:
   check_news:
     runs-on: ubuntu-latest
