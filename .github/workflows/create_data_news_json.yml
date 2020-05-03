@@ -7,7 +7,7 @@ on:
   schedule:
     - cron:  '0 * * * *'
 jobs:
-  check_news:
+  update_data:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
@@ -29,7 +29,7 @@ jobs:
       with:
         token: ${{ secrets.GITHUB_TOKEN }}
         path: development
-        commit-message: BOT; UPDATE WHATS NEW
+        commit-message: BOT; UPDATE DATA
         title: BOT; UPDATE WHATS NEW to dev-hamamatsu
         base: dev-hamamatsu
         branch: data-bot/dev-hamamatsu
@@ -39,7 +39,7 @@ jobs:
       with:
         token: ${{ secrets.GITHUB_TOKEN }}
         path: production
-        commit-message: BOT; UPDATE WHATS NEW
+        commit-message: BOT; UPDATE DATA
         title: BOT; UPDATE WHATS NEW to prod-hamamatsu
         base: prod-hamamatsu
         branch: data-bot/prod-hamamatsu
