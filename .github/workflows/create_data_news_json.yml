@@ -1,4 +1,4 @@
-.json# This is a workflow to create news|data.json and deploy with Actions
+# This is a workflow to create news|data.json and deploy with Actions
 
 name: data.json news.json builder and deploy
 env:
