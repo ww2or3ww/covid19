@@ -1,0 +1,46 @@
+# This is a workflow to create news|data.json and deploy with Actions
+
+name: data.json news.json builder and deploy
+env:
+  TZ: Asia/Tokyo
+on:
+  schedule:
+    - cron:  '0 6-24 * * *'
+jobs:
+  check_news:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+      with:
+        ref: dev-hamamatsu
+        path: development
+    - uses: actions/checkout@v2
+      with:
+        ref: prod-hamamatsu
+        path: production
+    - name: RUN PYTHON SCRIPT(create news.json)
+      run: python3 development/tool/create_news_json.py > development/data/hamamatsu/news.json
+    - name: RUN PYTHON SCRIPT(create data.json)
+      run: python3 -c "import os; os.chdir('development/tool'); import create_data_json; x = create_data_json.process('${{ secrets.APIKEY_CSV2JSON }}'); print(x)" > development/data/hamamatsu/data.json
+    - name: copy json dev to prod
+      run: cp -rf development/data/hamamatsu/* production/data/hamamatsu/
+    - name: Create Pull Request dev-hamamatsu
+      uses: peter-evans/create-pull-request@v2
+      with:
+        token: ${{ secrets.GITHUB_TOKEN }}
+        path: development
+        commit-message: BOT; UPDATE WHATS NEW
+        title: BOT; UPDATE WHATS NEW to dev-hamamatsu
+        base: dev-hamamatsu
+        branch: data-bot/dev-hamamatsu
+        labels: auto_merge
+    - name: Create Pull Request prod-hamamatsu
+      uses: peter-evans/create-pull-request@v2
+      with:
+        token: ${{ secrets.GITHUB_TOKEN }}
+        path: production
+        commit-message: BOT; UPDATE WHATS NEW
+        title: BOT; UPDATE WHATS NEW to prod-hamamatsu
+        base: prod-hamamatsu
+        branch: data-bot/prod-hamamatsu
+        labels: auto_merge
