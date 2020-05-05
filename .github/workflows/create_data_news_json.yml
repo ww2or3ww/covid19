@@ -30,7 +30,7 @@ jobs:
         token: ${{ secrets.GITHUB_TOKEN }}
         path: development
         commit-message: BOT; UPDATE DATA
-        title: BOT; UPDATE WHATS NEW to dev-hamamatsu
+        title: BOT; UPDATE DATA to dev-hamamatsu
         base: dev-hamamatsu
         branch: data-bot/dev-hamamatsu
         labels: auto_merge
@@ -40,7 +40,7 @@ jobs:
         token: ${{ secrets.GITHUB_TOKEN }}
         path: production
         commit-message: BOT; UPDATE DATA
-        title: BOT; UPDATE WHATS NEW to prod-hamamatsu
+        title: BOT; UPDATE DATA to prod-hamamatsu
         base: prod-hamamatsu
         branch: data-bot/prod-hamamatsu
         labels: auto_merge
