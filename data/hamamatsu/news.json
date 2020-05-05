@@ -1,9 +1,24 @@
 {
   "newsItems": [
     {
-      "date": "2020/05/01",
+      "date": "2020/05/05",
+      "url": "https://www.city.hamamatsu.shizuoka.jp/fukushisomu/r2teigkukyuufukin_pre.html",
+      "text": "特別定額給付金について"
+    },
+    {
+      "date": "2020/05/05",
       "url": "https://www.city.hamamatsu.shizuoka.jp/sangyoshinko/shougyo2.html",
       "text": "浜松市の休業要請に基づく協力金の支給について"
+    },
+    {
+      "date": "2020/05/05",
+      "url": "https://www.city.hamamatsu.shizuoka.jp/kiki/kaigi_1.html",
+      "text": "浜松市新型コロナウイルス感染症対策本部会議"
+    },
+    {
+      "date": "2020/05/05",
+      "url": "",
+      "text": "新型コロナウイルスに関するPCR検査実施状況（5月5日現在）2月14日～5月5日　789件"
     },
     {
       "date": "2020/05/01",
@@ -12,7 +27,7 @@
     },
     {
       "date": "2020/05/01",
-      "url": "https://www.city.hamamatsu.shizuoka.jp/koho2/emergency/korona_event4.html",
+      "url": "https://www.city.hamamatsu.shizuoka.jp/koho2/emergency/korona_event2005.html",
       "text": "市主催等のイベント開催中止・延期"
     },
     {
@@ -24,11 +39,6 @@
       "date": "2020/05/01",
       "url": "https://www.city.hamamatsu.shizuoka.jp/fukushisomu/jyuukyokakuho.html",
       "text": "住居確保給付金の支給"
-    },
-    {
-      "date": "2020/05/01",
-      "url": "",
-      "text": "新型コロナウイルスに関するPCR検査実施状況（5月1日現在）2月14日～5月1日　757件"
     },
     {
       "date": "2020/04/30",
