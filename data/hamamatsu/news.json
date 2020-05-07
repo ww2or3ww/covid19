@@ -1,6 +1,11 @@
 {
   "newsItems": [
     {
+      "date": "2020/05/07",
+      "url": "https://www.city.hamamatsu.shizuoka.jp/kanko/corona/cf.html",
+      "text": "クラウドファンディング「浜松のおいしい食を守る！応援プロジェクト」"
+    },
+    {
       "date": "2020/05/05",
       "url": "https://www.youtube.com/watch?v=froDFmm--ZA&list=PLpoFSIeePqNN3bLwRCv-r1xonybflTOmG",
       "text": "市長臨時会見について（別ウィンドウが開きます）"
@@ -49,21 +54,6 @@
       "date": "2020/05/01",
       "url": "https://www.city.hamamatsu.shizuoka.jp/fukushisomu/jyuukyokakuho.html",
       "text": "住居確保給付金の支給"
-    },
-    {
-      "date": "2020/04/30",
-      "url": "https://www.city.hamamatsu.shizuoka.jp/fukushisomu/tokubetsuteigaku.html",
-      "text": "「特別定額給付金事務局」の設置及び「新型コロナコールセンター」の開設"
-    },
-    {
-      "date": "2020/04/30",
-      "url": "https://www.city.hamamatsu.shizuoka.jp/sangyosomu/kochoukinsoudan.html",
-      "text": "雇用調整助成金等に関する相談窓口のご案内"
-    },
-    {
-      "date": "2020/04/28",
-      "url": "https://www.city.hamamatsu.shizuoka.jp/kiki/kyuugyouyousei.html",
-      "text": "休業要請対象施設の追加について"
     }
   ]
 }
