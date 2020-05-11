@@ -1,6 +1,16 @@
 {
   "newsItems": [
     {
+      "date": "2020/05/11",
+      "url": "https://www.city.hamamatsu.shizuoka.jp/sangyoshinko/shougyo2.html",
+      "text": "「浜松市の休業要請に基づく協力金の支給」オンライン申請ができるようになりました"
+    },
+    {
+      "date": "2020/05/11",
+      "url": "",
+      "text": "新型コロナウイルスに関するPCR検査実施状況（5月11日現在）2月14日～5月11日　835件"
+    },
+    {
       "date": "2020/05/08",
       "url": "https://www.city.hamamatsu.shizuoka.jp/fukushisomu/r2teigkukyuufukin_pre.html",
       "text": "特別定額給付金について"
@@ -11,29 +21,9 @@
       "text": "施設の臨時休館更新しました"
     },
     {
-      "date": "2020/05/08",
-      "url": "",
-      "text": "新型コロナウイルスに関するPCR検査実施状況（5月8日現在）2月14日～5月8日　809件"
-    },
-    {
       "date": "2020/05/07",
       "url": "https://www.city.hamamatsu.shizuoka.jp/kanko/corona/cf.html",
       "text": "クラウドファンディング「浜松のおいしい食を守る！応援プロジェクト」"
-    },
-    {
-      "date": "2020/05/05",
-      "url": "https://www.youtube.com/watch?v=froDFmm--ZA&list=PLpoFSIeePqNN3bLwRCv-r1xonybflTOmG",
-      "text": "市長臨時会見について（別ウィンドウが開きます）"
-    },
-    {
-      "date": "2020/05/05",
-      "url": "https://www.city.hamamatsu.shizuoka.jp/sangyoshinko/shougyo2.html",
-      "text": "浜松市の休業要請に基づく協力金の支給について"
-    },
-    {
-      "date": "2020/05/05",
-      "url": "https://www.city.hamamatsu.shizuoka.jp/kiki/kaigi_1.html",
-      "text": "浜松市新型コロナウイルス感染症対策本部会議"
     }
   ]
 }
