@@ -1,6 +1,11 @@
 {
   "newsItems": [
     {
+      "date": "2020/05/14",
+      "url": "https://www.city.hamamatsu.shizuoka.jp/fukushisomu/tokubetsuteigaku.html",
+      "text": "「新型コロナコールセンター」フリーダイヤル　5月15日（金曜日）午前8時30分より開始します"
+    },
+    {
       "date": "2020/05/13",
       "url": "",
       "text": "新型コロナウイルスに関するPCR検査実施状況（5月13日現在）2月14日～5月13日　873件"
