@@ -1,6 +1,11 @@
 {
   "newsItems": [
     {
+      "date": "2020/05/17",
+      "url": "",
+      "text": "新型コロナウイルスに関するPCR検査実施状況（5月17日現在）2月14日～5月17日　903件"
+    },
+    {
       "date": "2020/05/15",
       "url": "https://www.city.hamamatsu.shizuoka.jp/kiki/kaigi_1.html",
       "text": "第9回　浜松市新型コロナウイルス感染症対策本部会議"
@@ -34,11 +39,6 @@
       "date": "2020/05/15",
       "url": "https://www.city.hamamatsu.shizuoka.jp/koho2/emergency/korona_event2005.html",
       "text": "イベント開催中止・延期"
-    },
-    {
-      "date": "2020/05/15",
-      "url": "",
-      "text": "新型コロナウイルスに関するPCR検査実施状況（5月15日現在）2月14日～5月15日　886件"
     },
     {
       "date": "2020/05/14",
