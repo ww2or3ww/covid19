@@ -155,13 +155,13 @@ export default {
   },
   head() {
     const url = 'https://stopcovid19.code4hamamatsu.org'
-    const timestamp = new Date().getTime()
-    const ogpImage =
-      this.$i18n.locale === 'ja'
-        ? `${url}/ogp/${this.$route.params.card}.png?t=${timestamp}`
-        : `${url}/ogp/${this.$i18n.locale}/${this.$route.params.card}.png?t=${timestamp}`
+    // const timestamp = new Date().getTime()
+    // const ogpImage =
+    //   this.$i18n.locale === 'ja'
+    //     ? `${url}/ogp/${this.$route.params.card}.png?t=${timestamp}`
+    //     : `${url}/ogp/${this.$i18n.locale}/${this.$route.params.card}.png?t=${timestamp}`
     const description = `${this.updatedAt} | ${this.$t(
-      '当サイトは新型コロナウイルス感染症 (COVID-19) に関する最新情報を提供するために、東京都が開設したものです。'
+      '当サイトは新型コロナウイルス感染症 (COVID-19) に関する最新情報を提供するために、浜松市が開設したものです。'
     )}`
 
     return {
@@ -178,7 +178,7 @@ export default {
           content:
             this.title +
             ' | ' +
-            this.$t('東京都') +
+            this.$t('浜松市') +
             ' ' +
             this.$t('新型コロナウイルス感染症') +
             this.$t('対策サイト')
@@ -196,12 +196,12 @@ export default {
         {
           hid: 'og:image',
           property: 'og:image',
-          content: ogpImage
+          content: ''
         },
         {
           hid: 'twitter:image',
           name: 'twitter:image',
-          content: ogpImage
+          content: ''
         }
       ]
     }
