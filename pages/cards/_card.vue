@@ -55,11 +55,7 @@
 </template>
 
 <script>
-import Data from '@/data/data.json'
-import MetroData from '@/data/metro.json'
-import agencyData from '@/data/agency.json'
-import ShinjukuData from '@/data/13104_daily_visitors.json'
-import ChiyodaData from '@/data/13101_daily_visitors.json'
+import Data from '@/data/hamamatsu/data.json'
 import ConfirmedCasesDetailsCard from '@/components/cards/ConfirmedCasesDetailsCard.vue'
 import TestedCasesDetailsCard from '@/components/cards/TestedCasesDetailsCard.vue'
 import ConfirmedCasesNumberCard from '@/components/cards/ConfirmedCasesNumberCard.vue'
@@ -128,22 +124,6 @@ export default {
       case 'number-of-reports-to-covid19-consultation-desk':
         title = this.$t('新型コロナ受診相談窓口相談件数')
         updatedAt = Data.querents.date
-        break
-      case 'predicted-number-of-toei-subway-passengers':
-        title = this.$t('都営地下鉄の利用者数の推移')
-        updatedAt = MetroData.date
-        break
-      case 'agency':
-        title = this.$t('都庁来庁者数の推移')
-        updatedAt = agencyData.date
-        break
-      case 'shinjuku-visitors':
-        title = this.$t('新宿区エリアの来訪者数の推移（参考値）')
-        updatedAt = ShinjukuData.date
-        break
-      case 'chiyoda-visitors':
-        title = this.$t('千代田区エリアの来訪者数の推移（参考値）')
-        updatedAt = ChiyodaData.date
         break
     }
 
