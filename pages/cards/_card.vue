@@ -136,7 +136,7 @@ export default {
   head() {
     const url = 'https://stopcovid19.code4hamamatsu.org'
     // const timestamp = new Date().getTime()
-    // const ogpImage =
+    const ogpImage = 'https://stopcovid19.code4hamamatsu.org/hamamatsu/ogp.png'
     //   this.$i18n.locale === 'ja'
     //     ? `${url}/ogp/${this.$route.params.card}.png?t=${timestamp}`
     //     : `${url}/ogp/${this.$i18n.locale}/${this.$route.params.card}.png?t=${timestamp}`
@@ -176,12 +176,12 @@ export default {
         {
           hid: 'og:image',
           property: 'og:image',
-          content: ''
+          content: ogpImage
         },
         {
           hid: 'twitter:image',
           name: 'twitter:image',
-          content: ''
+          content: ogpImage
         }
       ]
     }
