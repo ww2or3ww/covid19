@@ -1,19 +1,19 @@
 {
   "newsItems": [
     {
+      "date": "2020/05/19",
+      "url": "",
+      "text": "新型コロナウイルスに関するPCR検査実施状況（5月19日現在）2月14日～5月19日　912件"
+    },
+    {
+      "date": "2020/05/19",
+      "url": "https://www.city.hamamatsu.shizuoka.jp/koho2/emergency/korona_shisetsu.html",
+      "text": "施設の臨時休館更新"
+    },
+    {
       "date": "2020/05/18",
       "url": "https://www.city.hamamatsu.shizuoka.jp/koho2/emergency/korona_event2005.html",
       "text": "イベント開催中止・延期"
-    },
-    {
-      "date": "2020/05/18",
-      "url": "",
-      "text": "新型コロナウイルスに関するPCR検査実施状況（5月18日現在）2月14日～5月18日　906件"
-    },
-    {
-      "date": "2020/05/18",
-      "url": "https://www.city.hamamatsu.shizuoka.jp/koho2/emergency/korona_shisetsu.html",
-      "text": "施設の臨時休館更新"
     },
     {
       "date": "2020/05/15",
