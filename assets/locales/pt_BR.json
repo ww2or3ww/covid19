@@ -14,6 +14,7 @@
   "新型コロナ受診相談窓口相談件数": "Number of calls to the Novel Coronavirus Hotline",
   "都営地下鉄の利用者数の推移": "Estimated number of Toei subway passengers",
   "都庁来庁者数の推移": "Number of visitors to the Tokyo Metropolitan Government buildings",
+  "テーブルを表示": "Show table",
   "都内発生（※1）": "Founds in Tokyo (*1)",
   "※1: 疑い例・接触者調査": "*1:Casos suspeitos・averiguação de suspeitos ", 
   "その他（※2）": "Diversos（*2）",
@@ -159,6 +160,7 @@
   "※退院には、死亡退院を含む": "* Alta refere-se à alta hospitalar, incluindo alta por óbito.",
   "{date} 更新": " Atualizado em {date} ",
   "オープンデータを入手": "Dados abertos",
+  "情報をシェアする": "Share",
   "埋め込み用コード": " Embed Code",
   "埋め込み用コードをコピーしました": " Copied the embed code",
   "{range}の利用者数*の平均値を基準としたときの相対値": "Relative figure based on the average number of users from January 20 to 24.",
@@ -332,6 +334,7 @@
   "facebookで{title}のグラフをシェア": "Compartilhar o gráfico {title} no facebook",
   "日付": "Data",
   "不明": "Omitido",
+  "{title}のグラフ": "Chart of {title}",
   "浜松市": "Prefeitura de Hamamatsu",
   "詳細を見る（浜松市福祉保健局）": "詳細を見る（浜松市福祉保健局）",
   "平日・土日祝": "Dias úteis・final de semana e feriado",
@@ -360,5 +363,6 @@
   "新型コロナウイルス感染症に関する相談件数": "Nº de consultas referente a infecção pelo Novo Coronavírus",
   "浜松市 中区": "Naka-ku",
   "浜松市 浜北区": "Hamakita-ku",
-  "浜松市 新型コロナウイルス感染症対策サイト": "Site para medidas Contágio pelo Novo Coronavírus de Hamamatsu"
+  "※退院は、保健所から報告があり、確認ができているものを反映": "* Discharged only includes cases reported and verified by public health centers",
+  "※死亡退院を含む": "※ including death discharges"
 }
