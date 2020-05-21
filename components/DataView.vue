@@ -63,7 +63,10 @@
           </div>
         </div>
 
-        <div v-if="this.$route.query.embed != 'true'" class="Footer-Right">
+        <div
+          v-if="this.$route.query.embed != 'true' && showEmbedButton"
+          class="Footer-Right"
+        >
           <v-tooltip left nudge-right="20" nudge-bottom="4">
             <template v-slot:activator="{ on }">
               <button
@@ -210,7 +213,8 @@ export default Vue.extend({
       displayShare: false,
       showOverlay: false,
       showDetails: false,
-      openDetails: false
+      openDetails: false,
+      showEmbedButton: false // グラフのSNS共有ボタンの表示制御
     }
   },
   computed: {
