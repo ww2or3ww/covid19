@@ -1,6 +1,11 @@
 {
   "newsItems": [
     {
+      "date": "2020/05/26",
+      "url": "https://www.city.hamamatsu.shizuoka.jp/koho2/emergency/korona_shisetsu.html",
+      "text": "施設の臨時休館更新"
+    },
+    {
       "date": "2020/05/25",
       "url": "",
       "text": "新型コロナウイルスに関するPCR検査実施状況（5月22日現在）2月14日～5月25日　942件"
@@ -19,11 +24,6 @@
       "date": "2020/05/20",
       "url": "https://www.city.hamamatsu.shizuoka.jp/jinji/officer/rinji/korona.html",
       "text": "会計年度任用職員（新型コロナウイルス感染拡大に伴う大学生等を対象とした緊急雇用）の募集"
-    },
-    {
-      "date": "2020/05/19",
-      "url": "https://www.city.hamamatsu.shizuoka.jp/koho2/emergency/korona_shisetsu.html",
-      "text": "施設の臨時休館更新"
     }
   ]
 }
