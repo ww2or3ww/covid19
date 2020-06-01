@@ -33,7 +33,11 @@
               target="_blank"
               rel="noopener noreferrer"
             >
-              <span>{{ $t('お電話の前に「新型コロナウイルス感染症について」のページをご覧いただき、必要な対応をご検討ください。') }}</span>
+              <span>{{
+                $t(
+                  'お電話の前に「新型コロナウイルス感染症について」のページをご覧いただき、必要な対応をご検討ください。'
+                )
+              }}</span>
               <v-icon size="18">
                 mdi-open-in-new
               </v-icon>
@@ -56,14 +60,14 @@
             'mt-1'
           ]"
         >
-          <a :class="$style.AdvisoryTelephone" href="tel:0534536118">
+          <a :class="$style.AdvisoryTelephone" href="tel:0120368567">
             <img
               :class="$style.AdvisoryTelephoneIcon"
               src="/flow/phone-24px.svg"
               aria-hidden="true"
               :alt="$t('電話番号')"
             />
-            053-453-6118
+            0120-368-567
           </a>
         </div>
         <div v-if="!['ja', 'ja-basic'].includes($i18n.locale)" class="pt-8">
