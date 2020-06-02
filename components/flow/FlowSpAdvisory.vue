@@ -16,7 +16,11 @@
           target="_blank"
           rel="noopener noreferrer"
         >
-          {{ $t('お電話の前に「新型コロナウイルス感染症について」のページをご覧いただき、必要な対応をご検討ください。') }}
+          {{
+            $t(
+              'お電話の前に「新型コロナウイルス感染症について」のページをご覧いただき、必要な対応をご検討ください。'
+            )
+          }}
           <v-icon size="16">
             mdi-open-in-new
           </v-icon>
@@ -38,7 +42,7 @@
             <span :class="$style.icon">
               <PhoneIcon alt="Phone" />
             </span>
-            <a href="tel:0534536118">053-453-6118</a>
+            <a href="tel:0120368567">0120-368-567</a>
           </div>
           <div
             v-if="!['ja', 'ja-basic'].includes($i18n.locale)"
