@@ -9,14 +9,20 @@ from html.parser import HTMLParser
 浜松市コロナサイトのお知らせ部分からnews.jsonを作成する
 [浜松市コロナサイト](https://www.city.hamamatsu.shizuoka.jp/koho2/emergency/korona.html)
 
-<div class="box_info_cnt">
-<ul>
-    <li>4月3日
+<div class="outline">
     <ul>
-        <li><a href="/koho2/emergency/20200403_1.html">新型コロナウイルス感染症による患者確認について【3例目】</a> </li>
+        <li>6月2日
+        <ul>
+            <li>新型コロナウイルスに関するPCR検査実施状況（6月2日現在）　<strong>2月14日～6月2</strong><strong>日　979件</strong> </li>
+            <li><a href="/koho2/emergency/korona_event2006.html">イベント開催中止・延期</a> </li>
+        </ul>
+        </li>
+        <li>6月1日
+        <ul>
+            <li><a href="/koho2/emergency/korona_shisetsu.html">公共施設の状況について</a> </li>
+        </ul>
+        </li>
     </ul>
-    </li>
-</ul>
 </div>
 このDOM要素を以下のJSONに変換する
 {
@@ -34,7 +40,6 @@ class NewsParser(HTMLParser):
     def __init__(self):
         HTMLParser.__init__(self)
         self.BASE_URL = 'https://www.city.hamamatsu.shizuoka.jp'
-        self.inNews = False
         self.inContents = False
         self.inDay = False
         self.ulInDay = False
@@ -49,12 +54,8 @@ class NewsParser(HTMLParser):
     def handle_starttag(self, tag, attrs):
         attrs = dict(attrs)
         self.starttag = tag
-        # <div class="box_info">
-        if tag == "div" and "class" in attrs and attrs['class'] == "box_info":
-            self.inNews = True
-            return
-        # <div class="box_info_cnt">
-        if tag == "div" and "class" in attrs and attrs['class'] == "box_info_cnt" and self.inNews:
+        # <div class="outline">
+        if tag == "div" and "class" in attrs and attrs['class'] == "outline":
             self.inContents = True
             return
         # <li>x月y日
@@ -95,7 +96,6 @@ class NewsParser(HTMLParser):
             return
         if tag == "div" and self.inContents:
             self.inContents = False
-            self.inNews = False
             return
 
     def handle_data(self, data):
