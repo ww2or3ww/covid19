@@ -1,6 +1,11 @@
 {
   "newsItems": [
     {
+      "date": "2020/06/10",
+      "url": "",
+      "text": "新型コロナウイルスに関するPCR検査実施状況（6月10日現在）2月14日～6月10日　1035件"
+    },
+    {
       "date": "2020/06/09",
       "url": "https://www.city.hamamatsu.shizuoka.jp/kanko/corona/sannmitsu.html",
       "text": "浜松市3密対策事業者支援事業費補助金"
@@ -9,11 +14,6 @@
       "date": "2020/06/09",
       "url": "https://www.city.hamamatsu.shizuoka.jp/ringyou/3mitu/toppu.html",
       "text": "新しい生活様式支援天竜材活用事業"
-    },
-    {
-      "date": "2020/06/09",
-      "url": "",
-      "text": "新型コロナウイルスに関するPCR検査実施状況（6月9日現在）2月14日～6月9日　1031件"
     },
     {
       "date": "2020/06/04",
