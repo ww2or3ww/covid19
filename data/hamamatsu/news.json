@@ -1,6 +1,11 @@
 {
   "newsItems": [
     {
+      "date": "2020/06/11",
+      "url": "https://www.city.hamamatsu.shizuoka.jp/koho2/emergency/korona_event2006.html",
+      "text": "イベント開催中止一覧を更新しました"
+    },
+    {
       "date": "2020/06/10",
       "url": "",
       "text": "新型コロナウイルスに関するPCR検査実施状況（6月10日現在）2月14日～6月10日　1035件"
@@ -14,16 +19,6 @@
       "date": "2020/06/09",
       "url": "https://www.city.hamamatsu.shizuoka.jp/ringyou/3mitu/toppu.html",
       "text": "新しい生活様式支援天竜材活用事業"
-    },
-    {
-      "date": "2020/06/04",
-      "url": "https://www.city.hamamatsu.shizuoka.jp/kanko/corona/paypay.html",
-      "text": "PayPayを活用したキャンペーン"
-    },
-    {
-      "date": "2020/06/04",
-      "url": "https://www.city.hamamatsu.shizuoka.jp/koho2/emergency/korona_seikatsu.html",
-      "text": "「新しい生活様式の実践」の掲示用印刷データが7言語に対応しました"
     }
   ]
 }
