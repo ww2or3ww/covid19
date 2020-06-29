@@ -67,7 +67,7 @@
       <span :class="$style.break">
         <!-- 改行によって空白が入らないように-->
         <!-- eslint-disable -->
-        <span :class="$style.fzXLLarge">{{ $t('PCR検査') }}</span>{{ $t('※') }}
+        <span :class="$style.fzXLLarge">{{ $t('PCR検査') }}</span>
         <!-- eslint-enable -->
       </span>
       <span :class="$style.break">

@@ -26,16 +26,7 @@
             aria-hidden="true"
             alt=" "
           />
-          {{ $t('微熱') }}
-        </div>
-        <div :class="$style.CheckBox">
-          <img
-            :class="$style.CheckBoxIcon"
-            src="/flow/check_circle-24px.svg"
-            aria-hidden="true"
-            alt=" "
-          />
-          {{ $t('軽い咳') }}
+          {{ $t('感染の予防') }}
         </div>
         <div :class="$style.CheckBox">
           <img

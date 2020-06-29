@@ -9,10 +9,7 @@
 
     <ul :class="[$style.rectContainer, $style.triple]">
       <li :class="$style.symptom">
-        {{ $t('微熱') }}
-      </li>
-      <li :class="$style.symptom">
-        {{ $t('軽い咳') }}
+        {{ $t('感染の予防') }}
       </li>
       <li :class="$style.symptom">
         {{ $t('感染の不安') }}
@@ -27,7 +24,7 @@
       href="#consult"
       :class="[$style.button, $style.clickable]"
     >
-      <span :class="$style.text">{{ $t('専門的な助言が必要な場合') }}</span>
+      <span :class="$style.text">{{ $t('新型コロナ受診相談窓口へ') }}</span>
       <ArrowForwardIcon :class="$style.icon" />
     </a>
   </div>
@@ -36,11 +33,10 @@
 <script lang="ts">
 import { onDoneScroll } from '@/utils/vueScrollTo'
 import ArrowForwardIcon from '@/static/flow/responsive/arrow_forward.svg'
-import PhoneIcon from '@/static/flow/responsive/phone.svg'
 import SentimentIcon from '@/static/flow/responsive/sentiment_very_dissatisfied.svg'
 
 export default {
-  components: { ArrowForwardIcon, PhoneIcon, SentimentIcon },
+  components: { ArrowForwardIcon, SentimentIcon },
   methods: { onDoneScroll }
 }
 </script>

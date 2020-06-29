@@ -102,22 +102,6 @@
             alt=" "
           />
         </em>
-        <span :class="$style.FlowText">{{ $t('かつ') }}</span>
-        <em :class="$style.FlowSymptom">
-          <i18n tag="span" :class="$style.FlowTextSm" path="発熱{temperature}">
-            <i18n tag="span" path="{tempNum}以上" place="temperature">
-              <span :class="$style.FlowTemperature" place="tempNum">
-                {{ $t('37.5℃') }}
-              </span>
-            </i18n>
-          </i18n>
-          <img
-            :class="$style.FlowSymptomIcon"
-            src="/flow/check_circle-24px.svg"
-            aria-hidden="true"
-            alt=" "
-          />
-        </em>
       </div>
     </div>
   </section>

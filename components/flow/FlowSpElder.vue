@@ -31,16 +31,7 @@
         </span>
       </li>
       <li :class="$style.symptom">
-        <i18n tag="span" path="発熱{temperature}" :class="$style.fzSmall">
-          <i18n
-            tag="span"
-            path="{tempNum}以上"
-            place="temperature"
-            :class="[$style.break, $style.fzRegular]"
-          >
-            <span :class="$style.temp" place="tempNum">{{ $t('37.5℃') }}</span>
-          </i18n>
-        </i18n>
+        <i18n tag="span" path="発熱{temperature}" :class="$style.fzRegular" />
       </li>
       <li :class="$style.symptom">
         {{ $t('強いだるさ') }}
@@ -49,19 +40,6 @@
         {{ $t('息苦しさ') }}
       </li>
     </ul>
-
-    <p :class="$style.duration">
-      <i18n path="{duration}続いている">
-        <i18n
-          :class="[$style.underline, $style.fzLarge]"
-          tag="span"
-          place="duration"
-          path="{day}日程度"
-        >
-          <strong :class="$style.fzNumeric" place="day">2</strong>
-        </i18n>
-      </i18n>
-    </p>
 
     <a
       v-scroll-to="{
