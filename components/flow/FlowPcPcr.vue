@@ -4,7 +4,6 @@
       <div>
         <p :class="$style.h1">
           {{ $t('PCR検査') }}
-          <span :class="$style.small">{{ $t('※') }}</span>
         </p>
         <p :class="$style.content">
           {{ $t('帰国者・接触者 電話相談センター') }}

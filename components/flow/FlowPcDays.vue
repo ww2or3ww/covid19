@@ -12,20 +12,7 @@
           {{ $t('一般の方') }}
         </p>
       </div>
-      <div>
-        <p>
-          <i18n path="{duration}続いている">
-            <i18n
-              tag="span"
-              place="duration"
-              path="{day}日以上"
-              :class="$style.FlowRowEmphasis"
-            >
-              <span :class="$style.FlowRowEmphasisDay" place="day">4</span>
-            </i18n>
-          </i18n>
-        </p>
-      </div>
+      <div />
     </div>
     <div :class="[$style.FlowRow, $style.FlowRowRowCheck]">
       <div :class="$style.FlowRowCondition">
@@ -51,15 +38,9 @@
         <p>
           <i18n
             tag="span"
-            :class="$style.FlowRowConditionSmall"
+            :class="$style.FlowRowConditionLarge"
             path="発熱{temperature}"
-          >
-            <i18n tag="span" place="temperature" path="{tempNum}以上">
-              <span :class="$style.FlowRowConditionLarge" place="tempNum">
-                {{ $t('37.5℃') }}
-              </span>
-            </i18n>
-          </i18n>
+          />
         </p>
         <img
           :class="$style.FlowRowConditionIcon"
@@ -119,20 +100,7 @@
           </li>
         </ul>
       </div>
-      <div>
-        <p>
-          <i18n path="{duration}続いている">
-            <i18n
-              tag="span"
-              place="duration"
-              path="{day}日程度"
-              :class="$style.FlowRowEmphasis"
-            >
-              <span :class="$style.FlowRowEmphasisDay" place="day">2</span>
-            </i18n>
-          </i18n>
-        </p>
-      </div>
+      <div />
     </div>
   </div>
 </template>
