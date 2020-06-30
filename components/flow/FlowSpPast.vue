@@ -94,21 +94,6 @@
       <p :class="$style.symptom">
         {{ $t('呼吸器症状') }}
       </p>
-      <p :class="$style.op">
-        {{ $t('かつ') }}
-      </p>
-      <p :class="$style.symptom">
-        <i18n tag="span" path="発熱{temperature}" :class="$style.fzSmall">
-          <i18n
-            tag="span"
-            path="{tempNum}以上"
-            place="temperature"
-            :class="[$style.break, $style.fzRegular]"
-          >
-            <span :class="$style.temp" place="tempNum">{{ $t('37.5℃') }}</span>
-          </i18n>
-        </i18n>
-      </p>
     </div>
     <a
       v-scroll-to="{

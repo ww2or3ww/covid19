@@ -2,7 +2,7 @@
   <div :class="$style.Container">
     <div :class="['pa-4', $style.AdvisoryBoxContainer]">
       <span :class="$style.AdvisoryBlackBoxSentense">{{
-        $t('専門的な助言が必要な場合')
+        $t('新型コロナ受診相談窓口')
       }}</span>
     </div>
   </div>
