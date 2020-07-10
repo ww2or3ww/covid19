@@ -1,29 +1,24 @@
 {
   "newsItems": [
     {
+      "date": "2020/07/10",
+      "url": "",
+      "text": "新型コロナウイルスに関するPCR検査実施状況（7月10日現在）2月14日～7月10日　1211件"
+    },
+    {
       "date": "2020/07/09",
       "url": "https://www.city.hamamatsu.shizuoka.jp/sangyosomu/sangyosomu/yachinshiennkyufukinn.html",
       "text": "経済産業省「家賃支援給付金」 について"
     },
     {
       "date": "2020/07/09",
-      "url": "",
-      "text": "新型コロナウイルスに関するPCR検査実施状況（7月9日現在）2月14日～7月9日　1199件"
+      "url": "https://www.city.hamamatsu.shizuoka.jp/koho2/emergency/korona_event2007.html",
+      "text": "イベント開催中止一覧を更新しました"
     },
     {
       "date": "2020/07/08",
       "url": "https://www.city.hamamatsu.shizuoka.jp/sangyosomu/kyugyoshien.html",
       "text": "新型コロナウイルス感染症対応休業支援金・給付金のお知らせ"
-    },
-    {
-      "date": "2020/07/03",
-      "url": "https://www.city.hamamatsu.shizuoka.jp/koho2/emergency/korona_event2007.html",
-      "text": "イベント開催中止一覧を更新しました"
-    },
-    {
-      "date": "2020/07/03",
-      "url": "https://www.city.hamamatsu.shizuoka.jp/kosodate/20200601.html",
-      "text": "ひとり親世帯臨時特別給付金"
     }
   ]
 }
