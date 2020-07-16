@@ -40,6 +40,13 @@ export default {
       iso: 'ja-JP',
       file: 'ja-Hira.json',
       description: 'Easy Japanese'
+    },
+    {
+      code: 'tl-ph',
+      name: 'タガログ語',
+      iso: 'tl',
+      file: 'tl.json',
+      description: 'Tagalog'
     }
   ]
 }
