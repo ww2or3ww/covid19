@@ -40,6 +40,13 @@ export default {
       iso: 'ja-JP',
       file: 'ja-Hira.json',
       description: 'Easy Japanese'
+    },
+    {
+      code: 'zh-cn',
+      name: '简体中文',
+      iso: 'zh-CN',
+      file: 'zh_CN.json',
+      description: 'Simplified Chinese'
     }
   ]
 }
