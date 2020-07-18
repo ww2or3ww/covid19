@@ -70,29 +70,34 @@ $ docker-compose run --rm app yarn install
 `process.env.GENERATE_ENV` の値が、本番の場合は`'production'`に、それ以外の場合は `'development'` になっています。  
 テスト環境のみで実行したい処理がある場合はこちらの値をご利用ください。
 
-### ステージング・本番環境への反映
+### 本番環境への反映
 
 `prod-hamamatsu` ブランチがアップデートされると、自動的にNetlifyにより、本番サイト https://stopcovid19.code4hamamatsu.org/ が更新されます。
 
-`dev-hamamatsu` ブランチがアップデートされると、自動的にNetlifyにより、開発用サイト https://dev-stopcovid19.code4hamamatsu.org/ が更新されます。
-
 ### ブランチルール
 
-dev-hamamatsu, dev-hotfix 以外は Pull Request は禁止です。
+prod-hamamatsu 以外は Pull Request は禁止です。
 Pull Request を送る際の branch は、以下のネーミングルールでお願いします。
 
 機能追加系： feature/#{ISSUE_ID}-#{branch_title_name}  
 ホットフィックス系: hotfix/#{ISSUE_ID}-#{branch_title_name}
 
 #### 基本的なブランチ
+
+**2020/06/06**
+
+新機能開発のペースが落ち着いてきたため、devブランチを一旦廃止します。
+
+今後のプルリクエストは `prod-hamamatsu` 宛に送ってください。
+
+prod-hamamatsu へプルリクエストを送るとNetlifyによって検証用のURLが発行されるため、そのURLから変更内容の確認ができます。
+
 | 目的 | ブランチ | 確認URL | 備考 |
 | ---- | -------- | ---- | ---- |
-| 開発 | dev-hamamatsu | https://dev-stopcovid19.code4hamamatsu.org/ | base branch。基本はこちらに Pull Requestを送ってください |
-| 緊急適用用 | dev-hotfix | なし | 急ぎ本番に適用するべき修正。管理者から依頼された場合こちらを使ってください |
-| 本番 | prod-hamamatsu | https://stopcovid19.code4hamamatsu.org/ | 管理者以外の Pull Request は禁止です |
+| 開発(2020/06/06廃止) | dev-hamamatsu | https://dev-stopcovid19.code4hamamatsu.org/ | base branch。基本はこちらに Pull Requestを送ってください |
+| 本番 | prod-hamamatsu | https://stopcovid19.code4hamamatsu.org/ | こちらに Pull Requestを送ってください |
 
 #### システムで利用しているブランチ
 | 目的 | ブランチ | 確認URL | 備考 |
 | ---- | -------- | ---- | ---- |
 | 本番サイトHTML | prod-hamamatsu | https://stopcovid19.code4hamamatsu.org/ | 静的ビルドされたHTMLが置いてある場所 |
-| OGP作業用 | deploy/new_ogp | なし | OGPの更新用 |

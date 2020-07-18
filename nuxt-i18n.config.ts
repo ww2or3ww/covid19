@@ -42,6 +42,13 @@ export default {
       description: 'Easy Japanese'
     },
     {
+      code: 'tl-ph',
+      name: 'タガログ語',
+      iso: 'tl',
+      file: 'tl.json',
+      description: 'Tagalog'
+    },
+    {
       code: 'zh-cn',
       name: '简体中文',
       iso: 'zh-CN',
