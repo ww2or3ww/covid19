@@ -47,6 +47,13 @@ export default {
       iso: 'tl',
       file: 'tl.json',
       description: 'Tagalog'
+    },
+    {
+      code: 'zh-cn',
+      name: '简体中文',
+      iso: 'zh-CN',
+      file: 'zh_CN.json',
+      description: 'Simplified Chinese'
     }
   ]
 }
