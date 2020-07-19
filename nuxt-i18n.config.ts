@@ -54,6 +54,13 @@ export default {
       iso: 'zh-CN',
       file: 'zh_CN.json',
       description: 'Simplified Chinese'
+    },
+    {
+      code: 'vi',
+      name: 'Tiếng Việt',
+      iso: 'vi',
+      file: 'vi.json',
+      description: 'Tiếng Việt'
     }
   ]
 }
