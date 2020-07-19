@@ -354,5 +354,12 @@
   "また、利用者が当サイトを利用したことにより発生した利用者の損害及び利用者が第三者に与えた損害に対して、責任を負うものではありません。": "Và, chúng tôi cũng không chịu trách nhiệm đối với những tổn thất của người dùng hay do người dùng gây ra cho người thứ 3  phát sinh do việc người dùng sử dụng trang web này.",
   "当サイトに掲載されている情報は、予告なしに変更又は削除することがあります。": "Những thông tin đã được đăng trên trang web này có thể thay đổi hoặc xóa bỏ mà không thông báo trước.",
   "本サイトで公表しているデータは、{catalogWebsite}より誰でも自由にダウンロードが可能です。（データは順次追加予定です)": "Những dữ liệu được công bố ở trang web này thì ai cũng có thể tự do tải xuống được bằng {catalogWebsite}. (Dữ liệu sẽ được thêm dần theo trình tự)",
-  "静岡県オープンデータカタログサイト": "Trang web catalog dữ liệu mở Tỉnh Shizuoka"
+  "静岡県オープンデータカタログサイト": "Trang web catalog dữ liệu mở Tỉnh Shizuoka",
+  "（注）チャーター機帰国者、クルーズ船乗客等は含まれていない":"(Chú ý) không bao gồm những người về nước trên chuyến bay trọn gói, những người trên tàu du lịch",
+  "※死亡退院を含む":"※Ra viện bao gồm cả tử vong ra viện",
+  "（注）速報値として公開するものであり、後日確定データとして修正される場合あり":"(Chú ý) Số người thực hiện kiểm nghiệm chỉ là số liệu thống kê gần nhất được công bố, cũng có trường hợp con số chính xác sẽ được chỉnh sửa vào ngày sau đó.",
+  "感染の予防":"Phòng tránh lây nhiễm",
+  "ひまわり":"hoa hướng dương",
+  "※退院は、保健所から報告があり、確認ができているものを反映":"※退院は、保健所から報告があり、確認ができているものを反映",
+  "（注）医療機関が保険適用で行った検査は含まれていない":"(Chú ý) 医療機関が保険適用で行った検査は含まれていない"
 }
