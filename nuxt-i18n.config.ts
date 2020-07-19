@@ -61,6 +61,13 @@ export default {
       iso: 'vi',
       file: 'vi.json',
       description: 'Tiếng Việt'
+    },
+    {
+      code: 'es',
+      name: 'Español',
+      iso: 'es',
+      file: 'es.json',
+      description: 'Spanish'
     }
   ]
 }
