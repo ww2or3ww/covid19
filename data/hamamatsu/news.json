@@ -1,6 +1,36 @@
 {
   "newsItems": [
     {
+      "date": "2020/07/23",
+      "url": "",
+      "text": "新型コロナウイルス感染症による患者確認について"
+    },
+    {
+      "date": "2020/07/23",
+      "url": "https://www.city.hamamatsu.shizuoka.jp/koho2/emergency/20200723_1.html",
+      "text": "（第13例目）"
+    },
+    {
+      "date": "2020/07/23",
+      "url": "https://www.city.hamamatsu.shizuoka.jp/koho2/emergency/20200723_2.html",
+      "text": "（第14例目）"
+    },
+    {
+      "date": "2020/07/23",
+      "url": "https://www.city.hamamatsu.shizuoka.jp/koho2/emergency/20200723_3.html",
+      "text": "（第15例目）"
+    },
+    {
+      "date": "2020/07/23",
+      "url": "https://www.city.hamamatsu.shizuoka.jp/koho2/emergency/20200723_4.html",
+      "text": "（第16例目）"
+    },
+    {
+      "date": "2020/07/23",
+      "url": "https://www.city.hamamatsu.shizuoka.jp/koho2/emergency/20200723_5.html",
+      "text": "（第17例目）"
+    },
+    {
       "date": "2020/07/22",
       "url": "https://www.city.hamamatsu.shizuoka.jp/koho2/room/talk/r2/korona_202007.html",
       "text": "新型コロナウイルス感染症に係る「市長メッセージ」"
