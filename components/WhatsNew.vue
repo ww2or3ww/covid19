@@ -84,7 +84,7 @@ export default Vue.extend({
   padding: 10px 0 0 0;
 }
 .WhatsNew {
-  padding: 10px;
+  padding: 0 10px 10px 10px;
   margin-bottom: 8px;
   overflow: auto;
   height: 240px;
@@ -96,7 +96,7 @@ export default Vue.extend({
 
   @include card-h2();
 
-  margin-bottom: 12px;
+  margin-bottom: 4px;
   color: $gray-2;
   margin-left: 12px;
 
