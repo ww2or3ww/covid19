@@ -1,50 +1,54 @@
 <template>
-  <div class="WhatsNew">
-    <h3 class="WhatsNew-heading">
-      <v-icon size="24" class="WhatsNew-heading-icon">
-        mdi-information
-      </v-icon>
-      {{ $t('最新のお知らせ') }}
-    </h3>
-    <ul class="WhatsNew-list">
-      <li v-for="(item, i) in items" :key="i" class="WhatsNew-list-item">
-        <a
-          class="WhatsNew-list-item-anchor"
-          :href="item.url"
-          target="_blank"
-          rel="noopener noreferrer"
-          v-if="item.url"
-        >
-          <time
-            class="WhatsNew-list-item-anchor-time px-2"
-            :datetime="formattedDate(item.date)"
-          >
-            {{ item.date }}
-          </time>
-          <span class="WhatsNew-list-item-anchor-link">
-            {{ item.text }}
-            <v-icon
-              v-if="!isInternalLink(item.url)"
-              class="WhatsNew-item-ExternalLinkIcon"
-              size="12"
+  <div>
+    <div class="WhatsNewTitle">
+      <h3 class="WhatsNew-heading">
+        <v-icon size="24" class="WhatsNew-heading-icon">
+          mdi-information
+        </v-icon>
+        {{ $t('最新のお知らせ') }}
+      </h3>
+      <div class="WhatsNew">
+        <ul class="WhatsNew-list">
+          <li v-for="(item, i) in items" :key="i" class="WhatsNew-list-item">
+            <a
+              v-if="item.url"
+              class="WhatsNew-list-item-anchor"
+              :href="item.url"
+              target="_blank"
+              rel="noopener noreferrer"
             >
-              mdi-open-in-new
-            </v-icon>
-          </span>
-        </a>
-        <div v-else class="WhatsNew-list-item-anchor">
-          <time
-            class="WhatsNew-list-item-anchor-time px-2"
-            :datetime="formattedDate(item.date)"
-          >
-            {{ item.date }}
-          </time>
-          <span class="WhatsNew-list-item-anchor-label">
-            {{ item.text }}
-          </span>
-        </div>
-      </li>
-    </ul>
+              <time
+                class="WhatsNew-list-item-anchor-time px-2"
+                :datetime="formattedDate(item.date)"
+              >
+                {{ item.date }}
+              </time>
+              <span class="WhatsNew-list-item-anchor-link">
+                {{ item.text }}
+                <v-icon
+                  v-if="!isInternalLink(item.url)"
+                  class="WhatsNew-item-ExternalLinkIcon"
+                  size="12"
+                >
+                  mdi-open-in-new
+                </v-icon>
+              </span>
+            </a>
+            <div v-else class="WhatsNew-list-item-anchor">
+              <time
+                class="WhatsNew-list-item-anchor-time px-2"
+                :datetime="formattedDate(item.date)"
+              >
+                {{ item.date }}
+              </time>
+              <span class="WhatsNew-list-item-anchor-label">
+                {{ item.text }}
+              </span>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -61,7 +65,7 @@ export default Vue.extend({
   },
   methods: {
     isEmptyLink(url: string): boolean {
-      return url.length == 0
+      return url.length === 0
     },
     isInternalLink(path: string): boolean {
       return !/^https?:\/\//.test(path)
@@ -74,11 +78,16 @@ export default Vue.extend({
 </script>
 
 <style lang="scss">
-.WhatsNew {
+.WhatsNewTitle {
   @include card-container();
 
-  padding: 10px;
-  margin-bottom: 20px;
+  padding: 10px 0 0 0;
+}
+.WhatsNew {
+  padding: 0 10px 10px 10px;
+  margin-bottom: 8px;
+  overflow: auto;
+  height: 240px;
 }
 
 .WhatsNew-heading {
@@ -87,7 +96,7 @@ export default Vue.extend({
 
   @include card-h2();
 
-  margin-bottom: 12px;
+  margin-bottom: 4px;
   color: $gray-2;
   margin-left: 12px;
 
