@@ -1,6 +1,11 @@
 {
   "newsItems": [
     {
+      "date": "2020/07/25",
+      "url": "https://www.city.hamamatsu.shizuoka.jp/koho2/emergency/20200725_1.html",
+      "text": "新型コロナウイルス感染症による患者確認について（7月25日公表）"
+    },
+    {
       "date": "2020/07/24",
       "url": "",
       "text": "新型コロナウイルス感染症による患者確認について"
