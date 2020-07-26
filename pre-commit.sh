@@ -7,7 +7,7 @@ unchangeable_files=(
   ^assets/locales/ko.json
   # ^assets/locales/pt_BR.json
   ^assets/locales/th.json
-  ^assets/locales/vi.json
+  # ^assets/locales/vi.json
   # ^assets/locales/zh_CN.json
   ^assets/locales/zh_TW.json
 )
