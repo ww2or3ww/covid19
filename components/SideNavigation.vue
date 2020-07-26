@@ -167,8 +167,18 @@ export default Vue.extend({
           divider: true
         },
         {
-          title: this.$t('民間支援情報ナビ For 静岡県版'),
-          link: 'https://vs-covid19-shizuoka.netlify.com/'
+          title: this.$t('はままつLINEコロナ身守りシステム'),
+          link:
+            'https://www.city.hamamatsu.shizuoka.jp/kanko/corona/line_shimin.html'
+        },
+        {
+          title: this.$t('新型コロナウイルス接触確認アプリ COCOA (iPhone)'),
+          link: 'https://apps.apple.com/jp/app/id1516764458'
+        },
+        {
+          title: this.$t('新型コロナウイルス接触確認アプリ COCOA (Android)'),
+          link:
+            'https://play.google.com/store/apps/details?id=jp.go.mhlw.covid19radar'
         }
       ]
     }

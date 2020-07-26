@@ -360,5 +360,8 @@
   "浜松市 中区": "Naka-ku",
   "浜松市 浜北区": "Hamakita-ku",
   "※退院は、保健所から報告があり、確認ができているものを反映": "※El alta refleja lo informado y confirmado por el centro de salud pública",
-  "※死亡退院を含む": "※Incluyendo descarga de muerte"
+  "※死亡退院を含む": "※Incluyendo descarga de muerte",
+  "はままつLINEコロナ身守りシステム": "Hamamatsu City LINE Self-defense system for Covid-19",
+  "新型コロナウイルス接触確認アプリ COCOA (iPhone)": "Contact Confirmation Application for Covid-19 COCOA (iPhone)",
+  "新型コロナウイルス接触確認アプリ COCOA (Android)": "Contact Confirmation Application for Covid-19 COCOA (Android)"
 }
