@@ -1,6 +1,21 @@
 {
   "newsItems": [
     {
+      "date": "2020/07/27",
+      "url": "https://www.city.hamamatsu.shizuoka.jp/koho2/emergency/20200727_1.html",
+      "text": "新型コロナウイルス感染症による患者確認について（7月27日公表）"
+    },
+    {
+      "date": "2020/07/27",
+      "url": "https://www.city.hamamatsu.shizuoka.jp/somu/taiou13.html",
+      "text": "市立小中学校及び市立高等学校の新型コロナウイルス感染症への対応について"
+    },
+    {
+      "date": "2020/07/27",
+      "url": "https://www.city.hamamatsu.shizuoka.jp/koho2/emergency/korona_event2008.html",
+      "text": "イベント開催中止・延期"
+    },
+    {
       "date": "2020/07/26",
       "url": "https://www.city.hamamatsu.shizuoka.jp/kiki/kaigi_1.html",
       "text": "「第10回　浜松市新型コロナウイルス感染症対策本部会議」を開催しました。"
@@ -104,21 +119,6 @@
       "date": "2020/07/22",
       "url": "",
       "text": "新型コロナウイルスに関するPCR検査実施状況（7月22日現在）2月14日～7月22日　1348件"
-    },
-    {
-      "date": "2020/07/21",
-      "url": "https://www.city.hamamatsu.shizuoka.jp/koho2/emergency/20200721_1.html",
-      "text": "新型コロナウイルス感染症による患者確認について（第9例目）"
-    },
-    {
-      "date": "2020/07/20",
-      "url": "https://www.city.hamamatsu.shizuoka.jp/koho2/emergency/korona_event2007.html",
-      "text": "イベント開催中止一覧を更新しました"
-    },
-    {
-      "date": "2020/07/09",
-      "url": "https://www.city.hamamatsu.shizuoka.jp/sangyosomu/sangyosomu/yachinshiennkyufukinn.html",
-      "text": "経済産業省「家賃支援給付金」 について"
     }
   ]
 }
