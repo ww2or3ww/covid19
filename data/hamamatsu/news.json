@@ -1,6 +1,16 @@
 {
   "newsItems": [
     {
+      "date": "2020/07/31",
+      "url": "https://www.city.hamamatsu.shizuoka.jp/koho2/emergency/20200731_1.html",
+      "text": "新型コロナウイルス感染症による患者確認について（7月31日公表）"
+    },
+    {
+      "date": "2020/07/31",
+      "url": "https://www.city.hamamatsu.shizuoka.jp/kanko/corona/lamp.html",
+      "text": "混雑ランプシステムの導入"
+    },
+    {
       "date": "2020/07/30",
       "url": "https://www.city.hamamatsu.shizuoka.jp/koho2/emergency/20200730_1.html",
       "text": "新型コロナウイルス感染症による患者確認について（7月30日公表）"
