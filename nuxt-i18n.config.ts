@@ -29,7 +29,7 @@ export default {
     },
     {
       code: 'pt-br',
-      name: 'Portuguese',
+      name: 'Português',
       iso: 'pt-BR',
       file: 'pt_BR.json',
       description: 'Portuguese'
@@ -43,7 +43,7 @@ export default {
     },
     {
       code: 'tl-ph',
-      name: 'タガログ語',
+      name: 'Tagalog',
       iso: 'tl',
       file: 'tl.json',
       description: 'Tagalog'
@@ -60,7 +60,7 @@ export default {
       name: 'Tiếng Việt',
       iso: 'vi',
       file: 'vi.json',
-      description: 'Tiếng Việt'
+      description: 'Vietnamese'
     },
     {
       code: 'es',
