@@ -1,14 +1,44 @@
 {
   "newsItems": [
     {
-      "date": "2020/08/06",
-      "url": "https://www.city.hamamatsu.shizuoka.jp/koho2/emergency/20200806_1.html",
-      "text": "新型コロナウイルス感染症による患者確認について（8月6日公表）"
+      "date": "2020/08/07",
+      "url": "https://www.city.hamamatsu.shizuoka.jp/koho2/emergency/20200807_1.html",
+      "text": "新型コロナウイルス感染症による患者確認について（8月7日公表）"
+    },
+    {
+      "date": "2020/08/07",
+      "url": "https://www.city.hamamatsu.shizuoka.jp/kanko/corona/ninnsyou.html",
+      "text": "はままつ安心・安全な飲食店認証制度"
+    },
+    {
+      "date": "2020/08/07",
+      "url": "https://www.city.hamamatsu.shizuoka.jp/hokenk/pcr_kensa_insyoku.html",
+      "text": "接待を伴う飲食店を対象としたPCR検査について"
+    },
+    {
+      "date": "2020/08/07",
+      "url": "https://www.city.hamamatsu.shizuoka.jp/fukushisomu/tokubetsuteigaku.html",
+      "text": "「新型コロナコールセンター」ガイダンスの一部変更"
+    },
+    {
+      "date": "2020/08/07",
+      "url": "",
+      "text": "新型コロナウイルスに関するPCR検査実施状況（8月6日現在）2月14日～8月6日　3224件"
+    },
+    {
+      "date": "2020/08/07",
+      "url": "https://www.city.hamamatsu.shizuoka.jp/koho2/emergency/korona_event2008.html",
+      "text": "イベント開催中止・延期"
     },
     {
       "date": "2020/08/06",
-      "url": "",
-      "text": "新型コロナウイルスに関するPCR検査実施状況（8月5日現在）2月14日～8月5日　3165件"
+      "url": "https://www.city.hamamatsu.shizuoka.jp/koho2/emergency/20200806_oshirase.html",
+      "text": "市民の皆さまへのお知らせ"
+    },
+    {
+      "date": "2020/08/06",
+      "url": "https://www.city.hamamatsu.shizuoka.jp/koho2/emergency/20200806_1.html",
+      "text": "新型コロナウイルス感染症による患者確認について（8月6日公表）"
     },
     {
       "date": "2020/08/05",
@@ -16,44 +46,9 @@
       "text": "新型コロナウイルス感染症による患者確認について（8月5日公表）"
     },
     {
-      "date": "2020/08/05",
-      "url": "",
-      "text": "新型コロナウイルスに関するPCR検査実施状況（8月4日現在）2月14日～8月4日　3084件"
-    },
-    {
       "date": "2020/08/04",
       "url": "https://www.city.hamamatsu.shizuoka.jp/koho2/emergency/20200804_1.html",
       "text": "新型コロナウイルス感染症による患者確認について（8月4日公表）"
-    },
-    {
-      "date": "2020/08/04",
-      "url": "https://www.city.hamamatsu.shizuoka.jp/koho2/emergency/korona_event2008.html",
-      "text": "イベント開催中止・延期"
-    },
-    {
-      "date": "2020/08/03",
-      "url": "https://www.city.hamamatsu.shizuoka.jp/koho2/emergency/20200803_1.html",
-      "text": "新型コロナウイルス感染症による患者確認について（8月3日公表）"
-    },
-    {
-      "date": "2020/08/02",
-      "url": "https://www.city.hamamatsu.shizuoka.jp/koho2/emergency/20200802_1.html",
-      "text": "新型コロナウイルス感染症による患者確認について（8月2日公表）"
-    },
-    {
-      "date": "2020/08/01",
-      "url": "https://www.city.hamamatsu.shizuoka.jp/koho2/emergency/20200801_1.html",
-      "text": "新型コロナウイルス感染症による患者確認について（8月1日公表）"
-    },
-    {
-      "date": "2020/07/31",
-      "url": "https://www.city.hamamatsu.shizuoka.jp/koho2/emergency/20200731_1.html",
-      "text": "新型コロナウイルス感染症による患者確認について（7月31日公表）"
-    },
-    {
-      "date": "2020/07/31",
-      "url": "https://www.city.hamamatsu.shizuoka.jp/kanko/corona/lamp.html",
-      "text": "混雑ランプシステムの導入"
     }
   ]
 }
