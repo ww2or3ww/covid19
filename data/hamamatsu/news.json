@@ -1,6 +1,16 @@
 {
   "newsItems": [
     {
+      "date": "2020/08/13",
+      "url": "",
+      "text": "新型コロナウイルスに関するPCR検査実施状況（8月12日現在）2月14日～8月2日　3632件"
+    },
+    {
+      "date": "2020/08/13",
+      "url": "https://www.city.hamamatsu.shizuoka.jp/koho2/emergency/korona_event2008.html",
+      "text": "イベント開催中止・延期"
+    },
+    {
       "date": "2020/08/12",
       "url": "https://www.city.hamamatsu.shizuoka.jp/koho2/emergency/20200812_1.html",
       "text": "新型コロナウイルス感染症による患者確認について（8月12日公表）"
@@ -14,41 +24,6 @@
       "date": "2020/08/11",
       "url": "https://www.city.hamamatsu.shizuoka.jp/koho2/emergency/20200811_1.html",
       "text": "新型コロナウイルス感染症による患者確認について（8月11日公表）"
-    },
-    {
-      "date": "2020/08/11",
-      "url": "https://www.city.hamamatsu.shizuoka.jp/koho2/emergency/korona_event2008.html",
-      "text": "イベント開催中止・延期"
-    },
-    {
-      "date": "2020/08/10",
-      "url": "https://www.city.hamamatsu.shizuoka.jp/koho2/emergency/20200810_1.html",
-      "text": "新型コロナウイルス感染症による患者確認について（8月10日公表）"
-    },
-    {
-      "date": "2020/08/10",
-      "url": "",
-      "text": "新型コロナウイルスに関するPCR検査実施状況（8月9日現在）2月14日～8月9日　3523件"
-    },
-    {
-      "date": "2020/08/07",
-      "url": "https://www.city.hamamatsu.shizuoka.jp/koho2/emergency/20200807_1.html",
-      "text": "新型コロナウイルス感染症による患者確認について（8月7日公表）"
-    },
-    {
-      "date": "2020/08/07",
-      "url": "https://www.city.hamamatsu.shizuoka.jp/kanko/corona/ninnsyou.html",
-      "text": "はままつ安心・安全な飲食店認証制度"
-    },
-    {
-      "date": "2020/08/07",
-      "url": "https://www.city.hamamatsu.shizuoka.jp/hokenk/pcr_kensa_insyoku.html",
-      "text": "接待を伴う飲食店を対象としたPCR検査について"
-    },
-    {
-      "date": "2020/08/07",
-      "url": "https://www.city.hamamatsu.shizuoka.jp/fukushisomu/tokubetsuteigaku.html",
-      "text": "「新型コロナコールセンター」ガイダンスの一部変更"
     },
     {
       "date": "2020/08/06",
