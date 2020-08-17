@@ -138,7 +138,7 @@
   "※土・日・祝日を除く庁舎開庁日の1週間累計数": "* Weekly number of visitors on days the building was open to the public, excluding Sat., Sun., and holidays.",
   "陽性者数": "Total number of people testing positive",
   "(累計)": "(Total)",
-  "入院中": "Hospitalized",
+  "入院・宿泊療養等": "Hospitalized, Receiving treatment at lodging facilities, etc",
   "軽症・<br />中等症": "Mild to moderate symptoms",
   "重症": "Severe symptoms",
   "死亡": "Deaths",

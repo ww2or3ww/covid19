@@ -5,9 +5,10 @@
       :title-id="'details-of-confirmed-cases'"
       :date="Data.patients.date"
     >
-      <confirmed-cases-table
+      <confirmed-cases-details-table
         :aria-label="$t('検査陽性者の状況')"
         v-bind="confirmedCases"
+        :date="Data.patients.date"
       />
     </confirmed-cases-card>
   </v-col>
@@ -17,12 +18,12 @@
 import Data from '@/data/hamamatsu/data.json'
 import formatConfirmedCases from '@/utils/formatConfirmedCases'
 import ConfirmedCasesCard from '@/components/ConfirmedCasesCard.vue'
-import ConfirmedCasesTable from '@/components/ConfirmedCasesTable.vue'
+import ConfirmedCasesDetailsTable from '@/components/ConfirmedCasesDetailsTable.vue'
 
 export default {
   components: {
     ConfirmedCasesCard,
-    ConfirmedCasesTable
+    ConfirmedCasesDetailsTable
   },
   data() {
     // 検査陽性者の状況
