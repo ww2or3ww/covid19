@@ -1,19 +1,24 @@
 {
   "newsItems": [
     {
-      "date": "2020/08/25",
+      "date": "2020/08/26",
+      "url": "https://www.city.hamamatsu.shizuoka.jp/koho2/emergency/20200826_2.html",
+      "text": "新型コロナウイルス感染症による患者確認について（8月26日公表）"
+    },
+    {
+      "date": "2020/08/26",
       "url": "",
-      "text": "新型コロナウイルスに関するPCR検査実施状況（8月24日現在）2月14日～8月24日　4450件"
+      "text": "新型コロナウイルスに関するPCR検査実施状況（8月25日現在）2月14日～8月25日　4684件"
+    },
+    {
+      "date": "2020/08/26",
+      "url": "https://www.city.hamamatsu.shizuoka.jp/koho2/emergency/korona_event2008.html",
+      "text": "イベント開催中止・延期"
     },
     {
       "date": "2020/08/24",
       "url": "https://www.city.hamamatsu.shizuoka.jp/koho2/emergency/20200824_2.html",
       "text": "新型コロナウイルス感染症による患者確認について（8月24日公表）"
-    },
-    {
-      "date": "2020/08/24",
-      "url": "https://www.city.hamamatsu.shizuoka.jp/koho2/emergency/korona_event2008.html",
-      "text": "イベント開催中止・延期"
     },
     {
       "date": "2020/08/22",
