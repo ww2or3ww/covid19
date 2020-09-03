@@ -1,9 +1,9 @@
 {
   "newsItems": [
     {
-      "date": "2020/09/02",
+      "date": "2020/09/03",
       "url": "",
-      "text": "新型コロナウイルスに関するPCR検査実施状況（9月1日現在）2月14日～9月1日　5351件"
+      "text": "新型コロナウイルスに関するPCR検査実施状況（9月2日現在）2月14日～9月2日　5387件"
     },
     {
       "date": "2020/09/01",
@@ -14,16 +14,6 @@
       "date": "2020/08/28",
       "url": "https://www.city.hamamatsu.shizuoka.jp/koho2/emergency/20200828_2.html",
       "text": "新型コロナウイルス感染症による患者確認について（8月28日公表）"
-    },
-    {
-      "date": "2020/08/26",
-      "url": "https://www.city.hamamatsu.shizuoka.jp/koho2/emergency/20200826_2.html",
-      "text": "新型コロナウイルス感染症による患者確認について（8月26日公表）"
-    },
-    {
-      "date": "2020/08/26",
-      "url": "https://www.city.hamamatsu.shizuoka.jp/kiki/disaster/bousai/hinannjo.html",
-      "text": "避難所等における感染症対策を徹底するため、本市における対応方針を策定しました"
     }
   ]
 }
