@@ -25,7 +25,7 @@ jobs:
     - name: copy json dev to prod
       run: cp -rf development/data/hamamatsu/*.json production/data/hamamatsu/
     - name: Create Pull Request dev-hamamatsu
-      uses: peter-evans/create-pull-request@v2
+      uses: peter-evans/create-pull-request@v3
       with:
         token: ${{ secrets.GITHUB_TOKEN }}
         path: development
@@ -35,7 +35,7 @@ jobs:
         branch: data-bot/dev-hamamatsu
         labels: auto_merge
     - name: Create Pull Request prod-hamamatsu
-      uses: peter-evans/create-pull-request@v2
+      uses: peter-evans/create-pull-request@v3
       with:
         token: ${{ secrets.GITHUB_TOKEN }}
         path: production
