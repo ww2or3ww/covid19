@@ -1,14 +1,19 @@
 {
   "newsItems": [
     {
-      "date": "2020/11/10",
-      "url": "https://www.city.hamamatsu.shizuoka.jp/koho2/emergency/20201110_2.html",
-      "text": "新型コロナウイルス感染症による患者確認について（11月10日公表）"
+      "date": "2020/11/11",
+      "url": "https://www.city.hamamatsu.shizuoka.jp/koho2/emergency/20201111_2.html",
+      "text": "新型コロナウイルス感染症による患者確認について（11月11日公表）"
+    },
+    {
+      "date": "2020/11/11",
+      "url": "",
+      "text": "新型コロナウイルスに関するPCR検査実施状況（11月10日現在）2月14日～11月10日　6652件"
     },
     {
       "date": "2020/11/10",
-      "url": "",
-      "text": "新型コロナウイルスに関するPCR検査実施状況（11月9日現在）2月14日～11月9日　6632件"
+      "url": "https://www.city.hamamatsu.shizuoka.jp/koho2/emergency/20201110_2.html",
+      "text": "新型コロナウイルス感染症による患者確認について（11月10日公表）"
     },
     {
       "date": "2020/11/10",
@@ -29,11 +34,6 @@
       "date": "2020/11/09",
       "url": "https://www.city.hamamatsu.shizuoka.jp/kiki/kaigi_1.html",
       "text": "「第11回　浜松市新型コロナウイルス感染症対策本部会議」を開催しました"
-    },
-    {
-      "date": "2020/11/08",
-      "url": "https://www.city.hamamatsu.shizuoka.jp/koho2/emergency/20201108_2.html",
-      "text": "新型コロナウイルス感染症による患者確認について（11月8日公表）"
     }
   ]
 }
