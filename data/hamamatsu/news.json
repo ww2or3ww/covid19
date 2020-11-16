@@ -1,6 +1,11 @@
 {
   "newsItems": [
     {
+      "date": "2020/11/16",
+      "url": "https://www.city.hamamatsu.shizuoka.jp/koho2/emergency/20201116_2.html",
+      "text": "新型コロナウイルス感染症による患者確認について（11月16日公表）"
+    },
+    {
       "date": "2020/11/15",
       "url": "https://www.city.hamamatsu.shizuoka.jp/koho2/emergency/20201115_2.html",
       "text": "新型コロナウイルス感染症による患者確認について（11月15日公表）"
@@ -14,31 +19,6 @@
       "date": "2020/11/14",
       "url": "https://www.city.hamamatsu.shizuoka.jp/koho2/emergency/20201114_2.html",
       "text": "新型コロナウイルス感染症による患者確認について（11月14日公表）"
-    },
-    {
-      "date": "2020/11/13",
-      "url": "https://www.city.hamamatsu.shizuoka.jp/koho2/emergency/20201113_2.html",
-      "text": "新型コロナウイルス感染症による患者確認について（11月13日公表）"
-    },
-    {
-      "date": "2020/11/12",
-      "url": "https://www.city.hamamatsu.shizuoka.jp/koho2/emergency/20201112_2.html",
-      "text": "新型コロナウイルス感染症による患者確認について（11月12日公表）"
-    },
-    {
-      "date": "2020/11/11",
-      "url": "https://www.city.hamamatsu.shizuoka.jp/koho2/emergency/20201111_2.html",
-      "text": "新型コロナウイルス感染症による患者確認について（11月11日公表）"
-    },
-    {
-      "date": "2020/11/10",
-      "url": "https://www.city.hamamatsu.shizuoka.jp/koho2/emergency/20201110_2.html",
-      "text": "新型コロナウイルス感染症による患者確認について（11月10日公表）"
-    },
-    {
-      "date": "2020/11/10",
-      "url": "https://www.city.hamamatsu.shizuoka.jp/koho2/emergency/korona_event2011.html",
-      "text": "イベント開催　中止・延期を更新しました"
     }
   ]
 }
