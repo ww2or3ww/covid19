@@ -116,7 +116,7 @@ class NewsParser(HTMLParser):
             if data:
                 m = re.match(r'([0-9]{1,2})月([0-9]{1,2})日', data)
                 month, day = m.groups()
-                self.currentDate = "2020/{}/{}".format(month.zfill(2),day.zfill(2))
+                self.currentDate = "2021/{}/{}".format(month.zfill(2),day.zfill(2))
             return
 
 def main():
