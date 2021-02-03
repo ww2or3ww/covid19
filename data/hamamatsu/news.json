@@ -1,14 +1,24 @@
 {
   "newsItems": [
     {
-      "date": "2021/02/02",
-      "url": "https://www.city.hamamatsu.shizuoka.jp/koho2/emergency/20210202_2.html",
-      "text": "新型コロナウイルス感染症による患者確認について（2月2日公表）"
+      "date": "2021/02/03",
+      "url": "https://www.city.hamamatsu.shizuoka.jp/koho2/emergency/20210203_2.html",
+      "text": "新型コロナウイルス感染症による患者確認について（2月3日公表）"
+    },
+    {
+      "date": "2021/02/03",
+      "url": "",
+      "text": "新型コロナウイルスに関するPCR検査実施状況（2月2日現在）令和2年2月14日～令和3年2月2日　10,486件"
     },
     {
       "date": "2021/02/02",
-      "url": "",
-      "text": "新型コロナウイルスに関するPCR検査実施状況（2月1日現在）令和2年2月14日～令和3年2月1日　10,466件"
+      "url": "https://www.city.hamamatsu.shizuoka.jp/koho2/room/talk/r3/0202.html",
+      "text": "新型コロナウイルス感染症に係る「市長メッセージ」"
+    },
+    {
+      "date": "2021/02/02",
+      "url": "https://www.city.hamamatsu.shizuoka.jp/koho2/emergency/20210202_2.html",
+      "text": "新型コロナウイルス感染症による患者確認について（2月2日公表）"
     },
     {
       "date": "2021/02/01",
@@ -16,19 +26,9 @@
       "text": "新型コロナウイルス感染症による患者確認について（2月1日公表）"
     },
     {
-      "date": "2021/01/31",
-      "url": "https://www.city.hamamatsu.shizuoka.jp/koho2/emergency/20210131_2.html",
-      "text": "新型コロナウイルス感染症による患者確認について（1月31日公表）"
-    },
-    {
       "date": "2021/01/28",
       "url": "https://www.city.hamamatsu.shizuoka.jp/koho2/emergency/korona_event_tougetsu.html",
       "text": "開催中止のイベント一覧を更新しました"
-    },
-    {
-      "date": "2021/01/14",
-      "url": "https://www.city.hamamatsu.shizuoka.jp/koho2/room/talk/r2/0114.html",
-      "text": "静岡県が警戒レベルを引き上げたこと、愛知県、岐阜県などが緊急事態宣言の対象地域に拡がったことに対する市長のコメント"
     }
   ]
 }
