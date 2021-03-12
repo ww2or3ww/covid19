@@ -3,23 +3,21 @@
 import re
 import json
 import requests
+from datetime import datetime
+from datetime import timezone
+from datetime import timedelta
 from html.parser import HTMLParser
 
 '''
 浜松市コロナサイトのお知らせ部分からnews.jsonを作成する
 [浜松市コロナサイト](https://www.city.hamamatsu.shizuoka.jp/koho2/emergency/korona.html)
 
-<div class="outline">
+<div class="box_info_cnt">
     <ul>
-        <li>6月2日
+        <li>3月12日
         <ul>
-            <li>新型コロナウイルスに関するPCR検査実施状況（6月2日現在）　<strong>2月14日～6月2</strong><strong>日　979件</strong> </li>
-            <li><a href="/koho2/emergency/korona_event2006.html">イベント開催中止・延期</a> </li>
-        </ul>
-        </li>
-        <li>6月1日
-        <ul>
-            <li><a href="/koho2/emergency/korona_shisetsu.html">公共施設の状況について</a> </li>
+            <li><a href="/koho2/emergency/20210312_2.html">新型コロナウイルス感染症による患者確認について（3月12日公表）</a></li>
+            <li>新型コロナウイルスに関するPCR検査実施状況（3月11日現在）　<strong>令和2年2月14日～令和3年3月11日　12,430</strong><strong>件</strong></li>
         </ul>
         </li>
     </ul>
@@ -28,8 +26,8 @@ from html.parser import HTMLParser
 {
   "newsItems": [
     {
-      "date": "2020\/04\/03",
-      "url": "https://www.city.hamamatsu.shizuoka.jp/koho2/emergency/20200403_1.html",
+      "date": "2021\/03\/12",
+      "url": "https://www.city.hamamatsu.shizuoka.jp//koho2/emergency/20210312_2.html",
       "text": "新型コロナウイルス感染症による患者確認について【3例目】"
     },
   ]
@@ -54,8 +52,8 @@ class NewsParser(HTMLParser):
     def handle_starttag(self, tag, attrs):
         attrs = dict(attrs)
         self.starttag = tag
-        # <div class="outline">
-        if tag == "div" and "class" in attrs and attrs['class'] == "outline":
+        # <div class="box_info_cnt">
+        if tag == "div" and "class" in attrs and attrs['class'] == "box_info_cnt":
             self.inContents = True
             return
         # <li>x月y日
@@ -113,14 +111,16 @@ class NewsParser(HTMLParser):
             return
         if self.inDay and not self.ulInDay:
             data = data.strip()
+            tokyo_tz = timezone(timedelta(hours=+9))
+            currentTime = datetime.now(tokyo_tz)
             if data:
                 m = re.match(r'([0-9]{1,2})月([0-9]{1,2})日', data)
                 if m:
                     month, day = m.groups()
-                    if month == '12':
-                        self.currentDate = "2020/{}/{}".format(month.zfill(2),day.zfill(2))
-                    else:
-                        self.currentDate = "2021/{}/{}".format(month.zfill(2),day.zfill(2))
+                    year = currentTime.year
+                    if int(month) == 12 and currentTime.month == 1:
+                        year = year - 1
+                    self.currentDate = "{}/{}/{}".format(year,month.zfill(2),day.zfill(2))
                 else:
                     m = re.match(r'([0-9]{4})年([0-9]{1,2})月([0-9]{1,2})日', data)
                     year, month, day = m.groups()
