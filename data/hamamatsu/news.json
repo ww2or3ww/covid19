@@ -1,3 +1,24 @@
 {
-  "newsItems": []
+  "newsItems": [
+    {
+      "date": "2021/03/13",
+      "url": "https://www.city.hamamatsu.shizuoka.jp/koho2/emergency/20210313_2.html",
+      "text": "新型コロナウイルス感染症による患者確認について（3月13日公表）"
+    },
+    {
+      "date": "2021/03/13",
+      "url": "",
+      "text": "新型コロナウイルスに関するPCR検査実施状況（3月12日現在）令和2年2月14日～令和3年3月12日　12,615件"
+    },
+    {
+      "date": "2021/03/12",
+      "url": "https://www.city.hamamatsu.shizuoka.jp/koho2/emergency/20210312_2.html",
+      "text": "新型コロナウイルス感染症による患者確認について（3月12日公表）"
+    },
+    {
+      "date": "2021/03/12",
+      "url": "https://www.city.hamamatsu.shizuoka.jp/sangyosomu/sangyosomu/ichijishiennkinn.html",
+      "text": "経済産業省「一時支援金」に関する情報を掲載しました"
+    }
+  ]
 }
