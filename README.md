@@ -94,8 +94,8 @@ prod-hamamatsu へプルリクエストを送るとNetlifyによって検証用�
 
 | 目的 | ブランチ | 確認URL | 備考 |
 | ---- | -------- | ---- | ---- |
-| 開発(2020/06/06廃止) | dev-hamamatsu | https://dev-stopcovid19.code4hamamatsu.org/ | base branch。基本はこちらに Pull Requestを送ってください |
-| 本番 | prod-hamamatsu | https://stopcovid19.code4hamamatsu.org/ | こちらに Pull Requestを送ってください |
+| 開発(2020/06/06廃止) | dev-hamamatsu | https://dev-stopcovid19.code4hamamatsu.org/ | base branch。~~基本はこちらに Pull Requestを送ってください~~ |
+| 本番 | prod-hamamatsu | https://stopcovid19.code4hamamatsu.org/ | base branch こちらからブランチ切って Pull Requestを送ってください |
 
 #### システムで利用しているブランチ
 | 目的 | ブランチ | 確認URL | 備考 |
