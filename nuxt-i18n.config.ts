@@ -44,10 +44,10 @@ export default {
     },
     {
       code: 'tl-ph',
-      name: 'Tagalog',
+      name: 'Filipino',
       iso: 'tl',
       file: 'tl.json',
-      description: 'Tagalog'
+      description: 'Filipino'
     },
     {
       code: 'zh-cn',
