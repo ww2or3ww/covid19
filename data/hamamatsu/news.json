@@ -1,14 +1,24 @@
 {
   "newsItems": [
     {
-      "date": "2021/04/04",
-      "url": "https://www.city.hamamatsu.shizuoka.jp/koho2/emergency/20210404_2.html",
-      "text": "新型コロナウイルス感染症による患者確認について（4月4日公表）"
+      "date": "2021/04/05",
+      "url": "",
+      "text": "新型コロナウイルスに関するPCR検査実施状況（4月4日現在）令和2年2月14日～令和3年4月4日　13,412件"
+    },
+    {
+      "date": "2021/04/05",
+      "url": "https://www.city.hamamatsu.shizuoka.jp/kanko/corona/hanndomasuku.html",
+      "text": "「手持ちハンドマスク」の配布"
+    },
+    {
+      "date": "2021/04/05",
+      "url": "https://www.city.hamamatsu.shizuoka.jp/kanko/corona/cashback2.html",
+      "text": "（第2弾）1億円キャッシュバックキャンペーン"
     },
     {
       "date": "2021/04/04",
-      "url": "",
-      "text": "新型コロナウイルスに関するPCR検査実施状況（4月3日現在）令和2年2月14日～令和3年4月3日　13,403件"
+      "url": "https://www.city.hamamatsu.shizuoka.jp/koho2/emergency/20210404_2.html",
+      "text": "新型コロナウイルス感染症による患者確認について（4月4日公表）"
     },
     {
       "date": "2021/04/03",
