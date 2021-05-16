@@ -7,7 +7,6 @@ const autoprefixer = require('autoprefixer')
 const environment = process.env.NODE_ENV || 'development'
 
 const config: Configuration = {
-  mode: 'universal',
   /*
    ** Headers of the page
    */
@@ -171,7 +170,16 @@ const config: Configuration = {
   generate: {
     fallback: true,
     routes() {
-      const locales = ['ja', 'ja-basic', 'en', 'pt-br', 'tl', 'zh-cn', 'vi', 'es']
+      const locales = [
+        'ja',
+        'ja-basic',
+        'en',
+        'pt-br',
+        'tl',
+        'zh-cn',
+        'vi',
+        'es'
+      ]
       const pages = [
         '/cards/details-of-confirmed-cases',
         '/cards/details-of-tested-cases',
