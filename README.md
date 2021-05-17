@@ -72,11 +72,11 @@ $ docker-compose run --rm app yarn install
 
 ### 本番環境への反映
 
-`prod-hamamatsu` ブランチがアップデートされると、自動的にNetlifyにより、本番サイト https://stopcovid19.code4hamamatsu.org/ が更新されます。
+main ブランチがアップデートされると、自動的にNetlifyにより、本番サイト https://stopcovid19.code4hamamatsu.org/ が更新されます。
 
 ### ブランチルール
 
-prod-hamamatsu 以外は Pull Request は禁止です。
+main 以外は Pull Request は禁止です。
 Pull Request を送る際の branch は、以下のネーミングルールでお願いします。
 
 機能追加系： feature/#{ISSUE_ID}-#{branch_title_name}  
@@ -88,16 +88,16 @@ Pull Request を送る際の branch は、以下のネーミングルールで�
 
 新機能開発のペースが落ち着いてきたため、devブランチを一旦廃止します。
 
-今後のプルリクエストは `prod-hamamatsu` 宛に送ってください。
+今後のプルリクエストは main 宛に送ってください。
 
-prod-hamamatsu へプルリクエストを送るとNetlifyによって検証用のURLが発行されるため、そのURLから変更内容の確認ができます。
+main へプルリクエストを送るとNetlifyによって検証用のURLが発行されるため、そのURLから変更内容の確認ができます。
 
 | 目的 | ブランチ | 確認URL | 備考 |
 | ---- | -------- | ---- | ---- |
 | 開発(2020/06/06廃止) | dev-hamamatsu | https://dev-stopcovid19.code4hamamatsu.org/ | base branch。~~基本はこちらに Pull Requestを送ってください~~ |
-| 本番 | prod-hamamatsu | https://stopcovid19.code4hamamatsu.org/ | base branch こちらからブランチ切って Pull Requestを送ってください |
+| 本番 | main | https://stopcovid19.code4hamamatsu.org/ | base branch こちらからブランチ切って Pull Requestを送ってください |
 
 #### システムで利用しているブランチ
 | 目的 | ブランチ | 確認URL | 備考 |
 | ---- | -------- | ---- | ---- |
-| 本番サイトHTML | prod-hamamatsu | https://stopcovid19.code4hamamatsu.org/ | 静的ビルドされたHTMLが置いてある場所 |
+| 本番サイトHTML | main | https://stopcovid19.code4hamamatsu.org/ | 静的ビルドされたHTMLが置いてある場所 |
