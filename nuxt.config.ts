@@ -145,7 +145,7 @@ const config: Configuration = {
         })
       ]
     },
-    extend(config: WebpackConfiguration, _) {
+    extend(config: WebpackConfiguration) {
       // default externals option is undefined
       config.externals = [{ moment: 'moment' }]
     }
