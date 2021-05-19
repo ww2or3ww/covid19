@@ -34,13 +34,13 @@ jobs:
     #     base: dev-hamamatsu
     #     branch: data-bot/dev-hamamatsu
     #     labels: auto_merge
-    - name: Create Pull Request prod-hamamatsu
+    - name: Create Pull Request main
       uses: peter-evans/create-pull-request@v3
       with:
         token: ${{ secrets.GITHUB_TOKEN }}
         path: production
         commit-message: BOT; UPDATE DATA
-        title: BOT; UPDATE DATA to prod-hamamatsu
+        title: BOT; UPDATE DATA to main
         base: main
-        branch: data-bot/prod-hamamatsu
+        branch: data-bot/main
         labels: auto_merge
