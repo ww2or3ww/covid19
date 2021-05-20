@@ -10,10 +10,6 @@ jobs:
   update_data:
     runs-on: ubuntu-latest
     steps:
-    # - uses: actions/checkout@v2
-    #   with:
-    #     ref: dev-hamamatsu
-    #     path: development
     - uses: actions/checkout@v2
       with:
         ref: main
@@ -22,18 +18,6 @@ jobs:
       run: python3 -B production/tool/create_news_json.py > production/data/hamamatsu/news.json
     - name: RUN PYTHON SCRIPT(create data.json)
       run: python3 -B -c "import os; os.chdir('production/tool'); import create_data_json; x = create_data_json.process('${{ secrets.APIKEY_CSV2JSON }}'); print(x)" > production/data/hamamatsu/data.json
-    # - name: copy json dev to prod
-    #   run: cp -rf development/data/hamamatsu/*.json production/data/hamamatsu/
-    # - name: Create Pull Request dev-hamamatsu
-    #   uses: peter-evans/create-pull-request@v3
-    #   with:
-    #     token: ${{ secrets.GITHUB_TOKEN }}
-    #     path: development
-    #     commit-message: BOT; UPDATE DATA
-    #     title: BOT; UPDATE DATA to dev-hamamatsu
-    #     base: dev-hamamatsu
-    #     branch: data-bot/dev-hamamatsu
-    #     labels: auto_merge
     - name: Create Pull Request main
       uses: peter-evans/create-pull-request@v3
       with:
