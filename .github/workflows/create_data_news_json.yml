@@ -26,5 +26,5 @@ jobs:
         commit-message: BOT; UPDATE DATA
         title: BOT; UPDATE DATA to main
         base: main
-        branch: data-bot/prod-hamamatsu
+        branch: data-bot/main
         labels: auto_merge
