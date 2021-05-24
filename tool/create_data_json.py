@@ -31,7 +31,10 @@ def requestWithRetry(apiKey):
             di = json.loads(apiResponse.text)
             if(di["hasError"]):
                 hasError = True
-                break;
+                break
+            else:
+                hasError = False
+                break
 
         except Exception as e:
             if(index + 1 < RETRY_COUNT):
