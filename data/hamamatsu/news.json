@@ -1,14 +1,29 @@
 {
   "newsItems": [
     {
-      "date": "2021/05/25",
-      "url": "https://www.city.hamamatsu.shizuoka.jp/koho2/emergency/20210525_2.html",
-      "text": "新型コロナウイルス感染症による患者確認について（5月25日公表）"
+      "date": "2021/05/26",
+      "url": "https://www.city.hamamatsu.shizuoka.jp/koho2/room/talk/r3/0526.html",
+      "text": "新型コロナウイルスに係る「市長メッセージ」（5月26日）"
+    },
+    {
+      "date": "2021/05/26",
+      "url": "https://www.city.hamamatsu.shizuoka.jp/koho2/emergency/20210526_2.html",
+      "text": "新型コロナウイルス感染症による患者確認について（5月26日公表）"
+    },
+    {
+      "date": "2021/05/26",
+      "url": "",
+      "text": "新型コロナウイルスに関するPCR検査実施状況（5月25日現在）令和2年2月14日～令和3年5月25日　17,043件"
+    },
+    {
+      "date": "2021/05/26",
+      "url": "https://www.city.hamamatsu.shizuoka.jp/kenkozoshin/shingatakoronawakuchin.html",
+      "text": "新型コロナウイルスワクチンについて更新しました"
     },
     {
       "date": "2021/05/25",
-      "url": "",
-      "text": "新型コロナウイルスに関するPCR検査実施状況（5月24日現在）令和2年2月14日～令和3年5月24日　16,928件"
+      "url": "https://www.city.hamamatsu.shizuoka.jp/koho2/emergency/20210525_2.html",
+      "text": "新型コロナウイルス感染症による患者確認について（5月25日公表）"
     },
     {
       "date": "2021/05/24",
@@ -19,16 +34,6 @@
       "date": "2021/05/14",
       "url": "https://www.city.hamamatsu.shizuoka.jp/kiki/kaigi_1.html",
       "text": "第12回浜松市新型コロナウイルス感染症対策本部会議を開催しました"
-    },
-    {
-      "date": "2021/05/14",
-      "url": "https://www.city.hamamatsu.shizuoka.jp/koho2/room/talk/r3/0514.html",
-      "text": "新型コロナウイルスに係る「市長メッセージ」（5月14日）"
-    },
-    {
-      "date": "2021/04/27",
-      "url": "https://www.city.hamamatsu.shizuoka.jp/kenkozoshin/shingatakoronawakuchin.html",
-      "text": "新型コロナウイルスワクチンについて更新しました"
     }
   ]
 }
