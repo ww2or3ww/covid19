@@ -1,19 +1,24 @@
 {
   "newsItems": [
     {
+      "date": "2021/06/05",
+      "url": "https://www.city.hamamatsu.shizuoka.jp/koho2/emergency/20210605_2.html",
+      "text": "新型コロナウイルス感染症による患者確認について（6月5日公表）"
+    },
+    {
+      "date": "2021/06/05",
+      "url": "",
+      "text": "新型コロナウイルスに関するPCR検査実施状況（6月4日現在）令和2年2月14日～令和3年6月4日　17,900件"
+    },
+    {
+      "date": "2021/06/05",
+      "url": "https://www.city.hamamatsu.shizuoka.jp/kenkozoshin/korona/mass_vaccination.html",
+      "text": "集団接種会場の予約状況を更新しました"
+    },
+    {
       "date": "2021/06/04",
       "url": "https://www.city.hamamatsu.shizuoka.jp/koho2/emergency/20210604_2.html",
       "text": "新型コロナウイルス感染症による患者確認について（6月4日公表）"
-    },
-    {
-      "date": "2021/06/04",
-      "url": "",
-      "text": "新型コロナウイルスに関するPCR検査実施状況（6月3日現在）令和2年2月14日～令和3年6月3日　17,816件"
-    },
-    {
-      "date": "2021/06/04",
-      "url": "https://www.city.hamamatsu.shizuoka.jp/kenkozoshin/korona/mass_vaccination.html",
-      "text": "集団接種会場の予約状況を更新しました"
     },
     {
       "date": "2021/06/03",
