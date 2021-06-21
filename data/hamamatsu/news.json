@@ -1,14 +1,19 @@
 {
   "newsItems": [
     {
-      "date": "2021/06/20",
-      "url": "https://www.city.hamamatsu.shizuoka.jp/koho2/emergency/20210620_2.html",
-      "text": "新型コロナウイルス感染症による患者確認について（6月20日公表）"
+      "date": "2021/06/21",
+      "url": "https://www.city.hamamatsu.shizuoka.jp/koho2/emergency/20210621_2.html",
+      "text": "新型コロナウイルス感染症による患者確認について（6月21日公表）"
+    },
+    {
+      "date": "2021/06/21",
+      "url": "",
+      "text": "新型コロナウイルスに関するPCR検査実施状況（6月20日現在）令和2年2月14日～令和3年6月20日　18,736件"
     },
     {
       "date": "2021/06/20",
-      "url": "",
-      "text": "新型コロナウイルスに関するPCR検査実施状況（6月19日現在）令和2年2月14日～令和3年6月19日　18,727件"
+      "url": "https://www.city.hamamatsu.shizuoka.jp/koho2/emergency/20210620_2.html",
+      "text": "新型コロナウイルス感染症による患者確認について（6月20日公表）"
     },
     {
       "date": "2021/06/19",
@@ -29,11 +34,6 @@
       "date": "2021/06/18",
       "url": "https://www.city.hamamatsu.shizuoka.jp/koho2/room/talk/r3/0618.html",
       "text": "新型コロナウイルス感染症に係る「市長メッセージ」）"
-    },
-    {
-      "date": "2021/06/18",
-      "url": "https://www.city.hamamatsu.shizuoka.jp/koho2/emergency/20210618_2.html",
-      "text": "新型コロナウイルス感染症による患者確認について（6月18日公表）"
     }
   ]
 }
