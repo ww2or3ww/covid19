@@ -53,6 +53,8 @@ $ yarn install
 $ docker-compose run --rm app yarn install
 ```
 
+起動後、[http://localhost:3000](http://localhost:3000) へアクセスする。
+
 ### VSCode + Remote Containersで開発する場合
 
 1. VSCodeの拡張機能「[Remote Development](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.vscode-remote-extensionpack)」を導入します。
