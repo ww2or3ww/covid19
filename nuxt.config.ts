@@ -165,6 +165,9 @@ const config: Configuration = {
   pwa: {
     icon: {
       iconSrc: 'static/hamamatsu/icon.png'
+    },
+    workbox: {
+      enabled: false
     }
   },
   generate: {
