@@ -1,6 +1,16 @@
 {
   "newsItems": [
     {
+      "date": "2021/11/13",
+      "url": "https://www.city.hamamatsu.shizuoka.jp/koho2/emergency/20211113_2.html",
+      "text": "新型コロナウイルス感染症による患者確認について（11月13日公表）"
+    },
+    {
+      "date": "2021/11/13",
+      "url": "",
+      "text": "新型コロナウイルスに関するPCR検査実施状況（11月12日現在）令和2年2月14日～令和3年11月12日　24,485件"
+    },
+    {
       "date": "2021/11/12",
       "url": "https://www.city.hamamatsu.shizuoka.jp/koho2/emergency/20211112_2.html",
       "text": "新型コロナウイルス感染症による患者確認について（11月12日公表）"
@@ -9,11 +19,6 @@
       "date": "2021/11/12",
       "url": "https://www.city.hamamatsu.shizuoka.jp/koho2/emergency/covid-19/index.html",
       "text": "新型コロナウイルス感染症患者動向"
-    },
-    {
-      "date": "2021/11/12",
-      "url": "",
-      "text": "新型コロナウイルスに関するPCR検査実施状況（11月11日現在）令和2年2月14日～令和3年11月11日　24,439件"
     },
     {
       "date": "2021/09/15",
