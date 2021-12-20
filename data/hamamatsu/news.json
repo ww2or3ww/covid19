@@ -1,9 +1,9 @@
 {
   "newsItems": [
     {
-      "date": "2021/12/19",
+      "date": "2021/12/20",
       "url": "",
-      "text": "新型コロナウイルスに関するPCR検査実施状況（12月18日現在）令和2年2月14日～令和3年12月18日　24,682件"
+      "text": "新型コロナウイルスに関するPCR検査実施状況（12月19日現在）令和2年2月14日～令和3年12月19日　24,683件"
     },
     {
       "date": "2021/12/17",
@@ -19,11 +19,6 @@
       "date": "2021/11/29",
       "url": "https://www.city.hamamatsu.shizuoka.jp/koho2/room/talk/r3/1129.html",
       "text": "市長メッセージを掲載しました"
-    },
-    {
-      "date": "2021/09/15",
-      "url": "https://www.city.hamamatsu.shizuoka.jp/kenkozoshin/sesshu_yotei.html",
-      "text": "新型コロナウイルスワクチンの今後の接種体制について（9月15日公表）"
     }
   ]
 }
