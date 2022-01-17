@@ -7,7 +7,9 @@
       :chart-data="patientsGraph"
       :date="Data.patients_summary.date"
       :unit="$t('人')"
-      :url="'https://opendata.pref.shizuoka.jp/dataset/8113.html'"
+      :url="
+        'https://www.city.hamamatsu.shizuoka.jp/odpf/opendata/v1.html?x=221309_hamamatsu_covid19_patients_summary'
+      "
     />
   </v-col>
 </template>

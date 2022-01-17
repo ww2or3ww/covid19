@@ -7,7 +7,9 @@
       :chart-data="contactsGraph"
       :date="Data.contacts.date"
       :unit="$t('件.reports')"
-      :url="'https://opendata.pref.shizuoka.jp/dataset/8108.html'"
+      :url="
+        'https://www.city.hamamatsu.shizuoka.jp/odpf/opendata/v1.html?x=221309_hamamatsu_covid19_call_center'
+      "
     />
     <!-- 件.reports = 窓口相談件数 -->
   </v-col>
