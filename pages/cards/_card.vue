@@ -57,20 +57,10 @@
 <script>
 import Data from '@/data/hamamatsu/data.json'
 import ConfirmedCasesDetailsCard from '@/components/cards/ConfirmedCasesDetailsCard.vue'
-import TestedCasesDetailsCard from '@/components/cards/TestedCasesDetailsCard.vue'
 import ConfirmedCasesNumberCard from '@/components/cards/ConfirmedCasesNumberCard.vue'
 import ConfirmedCasesAttributesCard from '@/components/cards/ConfirmedCasesAttributesCard.vue'
-import TestedNumberCard from '@/components/cards/TestedNumberCard.vue'
 import InspectionPersonsNumberCard from '@/components/cards/InspectionPersonsNumberCard.vue'
 import TelephoneAdvisoryReportsNumberCard from '@/components/cards/TelephoneAdvisoryReportsNumberCard.vue'
-import ConsultationDeskReportsNumberCard from '@/components/cards/ConsultationDeskReportsNumberCard.vue'
-import MetroCard from '@/components/cards/MetroCard.vue'
-import AgencyCard from '@/components/cards/AgencyCard.vue'
-import ShinjukuVisitorsCard from '@/components/cards/ShinjukuVisitorsCard.vue'
-import ChiyodaVisitorsCard from '@/components/cards/ChiyodaVisitorsCard.vue'
-import ShinjukuStMapCard from '@/components/cards/ShinjukuStMapCard.vue'
-import TokyoStMapCard from '@/components/cards/TokyoStMapCard.vue'
-import TokyoCityMapCard from '@/components/cards/TokyoCityMapCard.vue'
 
 export default {
   components: {
@@ -81,14 +71,6 @@ export default {
     TestedNumberCard,
     InspectionPersonsNumberCard,
     TelephoneAdvisoryReportsNumberCard,
-    ConsultationDeskReportsNumberCard,
-    MetroCard,
-    AgencyCard,
-    ShinjukuVisitorsCard,
-    ChiyodaVisitorsCard,
-    ShinjukuStMapCard,
-    TokyoStMapCard,
-    TokyoCityMapCard
   },
   data() {
     let title, updatedAt
