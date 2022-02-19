@@ -5,7 +5,7 @@
   "author": "浜松市",
   "private": true,
   "engines": {
-    "node": "14.17.0"
+    "node": "14.x"
   },
   "scripts": {
     "dev": "cross-env NODE_ENV=development nuxt-ts",
@@ -70,7 +70,7 @@
     "eslint-plugin-prettier": "^3.1.2",
     "eslint-plugin-tsdoc": "^0.2.3",
     "husky": "^4.2.3",
-    "jest": "^24.1.0",
+    "jest": "^26.0.0",
     "jest-puppeteer": "^5.0.3",
     "lint-staged": "^10.0.8",
     "nodemon": "^1.18.9",
