@@ -26,7 +26,7 @@ describe('Index page', () => {
 
     const text = await page.evaluate(() => document.body.textContent)
     await expect(text).toContain('市内の最新感染動向')
-  })
+  }, 90000)
 
   it('「新型コロナウイルス感染症が心配なときに」ページが表示されること', async () => {
     await Promise.all([
@@ -36,5 +36,5 @@ describe('Index page', () => {
 
     const text = await page.evaluate(() => document.body.textContent)
     await expect(text).toContain('新型コロナウイルス感染症が心配なときに')
-  })
+  }, 90000)
 })
