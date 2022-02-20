@@ -116,7 +116,7 @@
 
 <script lang="ts">
 import Vue from 'vue'
-import { TranslateResult } from 'vue-i18n'
+import type { TranslateResult } from 'vue-i18n'
 import LanguageSelector from '@/components/LanguageSelector.vue'
 import MenuList from '@/components/MenuList.vue'
 
@@ -149,7 +149,12 @@ export default Vue.extend({
         {
           icon: 'CovidIcon',
           title: this.$t('新型コロナウイルス感染症が心配なときに'),
-          link: this.localePath('/flow'),
+          link: this.localePath('/flow')
+        },
+        {
+          icon: 'mdi-information',
+          title: this.$t('当サイトについて'),
+          link: this.localePath('/about'),
           divider: true
         },
         {

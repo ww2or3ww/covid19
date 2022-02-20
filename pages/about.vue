@@ -6,13 +6,13 @@
     <StaticCard>
       {{
         $t(
-          '当サイトは新型コロナウイルス感染症 (COVID-19) に関する最新情報を提供するために、東京都が開設したものです。'
+          '当サイトは新型コロナウイルス感染症 (COVID-19) に関する最新情報を提供するために、浜松市が開設したものです。'
         )
       }}<br />
       <br />
       {{
         $t(
-          '東京都による公式情報と客観的な数値をわかりやすく伝えることで、東京都にお住まいの方や、東京都内に拠点を持つ企業の方、東京都を訪れる方が、現状を把握して適切な対策を取れるようにすることを目的としています。'
+          '浜松市による公式情報と客観的な数値をわかりやすく伝えることで、浜松市にお住まいの方や、浜松市内に拠点を持つ企業の方、浜松市を訪れる方が、現状を把握して適切な対策を取れるようにすることを目的としています。'
         )
       }}
     </StaticCard>
@@ -151,7 +151,7 @@
       <p>
         {{
           $t(
-            '当サイトに掲載されている情報の正確性については万全を期していますが、東京都は利用者が当サイトの情報を用いて行う一切の行為について責任を負うものではありません。'
+            '当サイトに掲載されている情報の正確性については万全を期していますが、浜松市は利用者が当サイトの情報を用いて行う一切の行為について責任を負うものではありません。'
           )
         }}
       </p>
@@ -177,12 +177,12 @@
         path="本サイトで公表しているデータは、{catalogWebsite}より誰でも自由にダウンロードが可能です。（データは順次追加予定です）"
       >
         <a
-          href="https://portal.data.metro.tokyo.lg.jp/"
+          href="https://www.city.hamamatsu.shizuoka.jp/odpf/opendata/v1.html?m=category&v=2"
           target="_blank"
           rel="noopener noreferrer"
           place="catalogWebsite"
         >
-          {{ $t('東京都オープンデータカタログサイト') }}
+          {{ $t('浜松市オープンデータカタログサイト') }}
         </a>
       </i18n>
     </StaticCard>
@@ -196,7 +196,7 @@
         }}
         <i18n path="詳しくは、{githubRepo}をご確認ください。">
           <a
-            href="https://github.com/tokyo-metropolitan-gov/covid19"
+            href="https://github.com/code-for-hamamatsu/covid19"
             target="_blank"
             rel="noopener noreferrer"
             place="githubRepo"
@@ -211,7 +211,7 @@
 
 <script lang="ts">
 import Vue from 'vue'
-import { MetaInfo } from 'vue-meta'
+// import { MetaInfo } from 'vue-meta' ここだけeslintでエラーになるので一旦コメントアウト
 import PageHeader from '@/components/PageHeader.vue'
 import StaticCard from '@/components/StaticCard.vue'
 
@@ -219,11 +219,11 @@ export default Vue.extend({
   components: {
     PageHeader,
     StaticCard
-  },
-  head(): MetaInfo {
-    return {
-      title: this.$t('当サイトについて') as string
-    }
   }
+  // head(): MetaInfo {
+  //   return {
+  //     title: this.$t('当サイトについて') as string
+  //   }
+  // }
 })
 </script>
