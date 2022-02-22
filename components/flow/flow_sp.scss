@@ -1,5 +1,5 @@
 @function px2vw($px, $vw: 600) {
-  @return $px / $vw * 100vw;
+  @return calc($px / $vw) * 100vw;
 }
 // common
 .container {

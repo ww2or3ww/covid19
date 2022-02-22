@@ -1,6 +1,7 @@
 <template>
   <div class="About">
     <page-header class="mb-3">
+      <i class="mdi mdi-information" />
       {{ $t('当サイトについて') }}
     </page-header>
     <StaticCard>
