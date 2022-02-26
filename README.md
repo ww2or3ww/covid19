@@ -33,7 +33,7 @@ $ yarn dev
 ```bash
 # serve with hot reload at localhost:3000
 $ docker-compose up --build
-$ docker exec -it { CONTAINER ID } sh
+$ docker exec -it covid19 sh
 
 # コンテナに入ってから
 /app yarn install

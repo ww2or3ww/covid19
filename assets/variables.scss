@@ -59,7 +59,7 @@ $z-index-map: (
 // font-size
 @mixin font-size($size, $base: 16) {
   font-size: $size + px;
-  font-size: ($size / $base) + rem;
+  font-size: calc($size / $base) + rem;
 }
 
 @mixin card-h1 {
