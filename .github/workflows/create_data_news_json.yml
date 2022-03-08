@@ -20,7 +20,7 @@ jobs:
     # - name: RUN PYTHON SCRIPT(create data.json)
     #   run: python3 -B -c "import os; os.chdir('production/tool'); import create_data_json; x = create_data_json.process('${{ secrets.APIKEY_CSV2JSON }}'); print(x)" > production/data/hamamatsu/data.json
     - name: BUILD csv2json
-      run: cd production/tool/covid19_hamamatsu-opendata_csv2json-go/src/app && go build -o ../../../csv2json.bin main.go && cd ../../../../../
+      run: cd production/tool/csv2json/src/app && go build -o ../../../csv2json.bin main.go && cd ../../../../../
     - name: RUN csv2json
       run: production/tool/csv2json.bin production/data/hamamatsu/data.json
     - name: Create Pull Request main
