@@ -88,13 +88,30 @@ func patients(df *dataframe.DataFrame, dtUpdated time.Time) (*Patients, error) {
 		return nil, df.Err
 	}
 
+	// 6日前から今日を含めた7日分を対象とする。
+	startDateStr := time.Now().AddDate(0, 0, -6).Format("2006-01-02")
+	startIndex := 0
+	dataCount := 0
+	for i, v := range dfSelected.Maps() {
+		r, ok := v[keyPatientsDay].(string)
+		if !ok {
+			return nil, errors.New("unable to cast patients day to string")
+		}
+		if r == startDateStr {
+			startIndex = i
+			dataCount = len(dfSelected.Maps()) - startIndex
+			break
+		}
+	}
+
 	p := &Patients{
 		Date: dtUpdated.Format("2006/01/02 15:04"),
-		Data: make([]PatientData, len(dfSelected.Maps())),
+		Data: make([]PatientData, dataCount),
 	}
 
 	// 行ごとにデータを作成して配列にセット
-	for i, v := range dfSelected.Maps() {
+	for i := startIndex; i < len(dfSelected.Maps()); i++ {
+		v := dfSelected.Maps()[i]
 		residence := v[keyPatientsResidence]
 		if residence == "" {
 			residence = "--"
@@ -116,7 +133,7 @@ func patients(df *dataframe.DataFrame, dtUpdated time.Time) (*Patients, error) {
 		if !ok {
 			return nil, errors.New("unable to cast patients day to string")
 		}
-		p.Data[i] = PatientData{
+		p.Data[i-startIndex] = PatientData{
 			Release:   r + "T08:00:00.000Z",
 			Residence: fmt.Sprintf(`%s %s`, v[keyPatientsCity], residence),
 			Age:       fmt.Sprintf(`%s`, age),
