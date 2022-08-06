@@ -15,17 +15,21 @@ jobs:
       with:
         ref: main
         path: production
-    # - name: RUN PYTHON SCRIPT(create news.json)
-    #   run: python3 -B production/tool/create_news_json.py > production/data/hamamatsu/news.json
+    - name: RUN PYTHON SCRIPT(create news.json)
+      continue-on-error: true
+      id: error_on_news_json
+      run: python3 -B production/tool/create_news_json.py > production/data/hamamatsu/news.json
     # - name: RUN PYTHON SCRIPT(create data.json)
     #   run: python3 -B -c "import os; os.chdir('production/tool'); import create_data_json; x = create_data_json.process('${{ secrets.APIKEY_CSV2JSON }}'); print(x)" > production/data/hamamatsu/data.json
-    - name: BUILD csv2json
-      run: cd production/tool/csv2json/src/app && go build -o ../../../csv2json.bin main.go && cd ../../../../../
-    - name: RUN csv2json
-      run: production/tool/csv2json.bin production/data/hamamatsu/data.json
-    - name: REMOVE csv2json
-      run: rm production/tool/csv2json.bin
+    - name: BUILD csv2json & RUN csv2json
+      continue-on-error: true
+      id: error_on_data_json
+      run: |
+        cd production/tool/csv2json/src/app && go build -o ../../../csv2json.bin main.go && cd ../../../../../
+        production/tool/csv2json.bin production/data/hamamatsu/data.json
+        rm production/tool/csv2json.bin
     - name: Create Pull Request main
+      if: ${{ steps.error_on_news_json.outcome == 'success' || steps.error_on_data_json.outcome == 'success'}}
       uses: peter-evans/create-pull-request@v3
       with:
         token: ${{ secrets.GITHUB_TOKEN }}
