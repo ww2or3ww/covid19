@@ -18,7 +18,9 @@ jobs:
     - name: RUN PYTHON SCRIPT(create news.json)
       continue-on-error: true
       id: error_on_news_json
-      run: python3 -B production/tool/create_news_json.py > production/data/hamamatsu/news.json
+      run: |
+        python3 -B production/tool/create_news_json.py > news.json
+        mv news.json production/data/hamamatsu/news.json
     # - name: RUN PYTHON SCRIPT(create data.json)
     #   run: python3 -B -c "import os; os.chdir('production/tool'); import create_data_json; x = create_data_json.process('${{ secrets.APIKEY_CSV2JSON }}'); print(x)" > production/data/hamamatsu/data.json
     - name: BUILD csv2json & RUN csv2json
