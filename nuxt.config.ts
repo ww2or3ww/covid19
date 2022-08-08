@@ -171,7 +171,39 @@ const config: Configuration = {
     }
   },
   generate: {
-    fallback: true
+    fallback: true,
+    routes() {
+      const locales = [
+        'ja',
+        'ja-basic',
+        'en',
+        'pt-br',
+        'tl',
+        'zh-cn',
+        'vi',
+        'es'
+      ]
+      const pages = [
+        '/cards/details-of-confirmed-cases',
+        '/cards/number-of-confirmed-cases',
+        '/cards/attributes-of-confirmed-cases',
+        '/cards/number-of-inspection-persons',
+        '/cards/number-of-reports-to-covid19-telephone-advisory-center'
+      ]
+
+      const routes: string[] = []
+      locales.forEach(locale => {
+        pages.forEach(page => {
+          if (locale === 'ja') {
+            routes.push(page)
+            return
+          }
+          const route = `/${locale}${page}`
+          routes.push(route)
+        })
+      })
+      return routes
+    }
   },
   // /*
   // ** hot read configuration for docker
