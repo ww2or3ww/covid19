@@ -42,6 +42,7 @@ import (
 )
 
 const keyPatientsSummaryDateOfPublicate = "公表_年月日"
+const keyPatientsSummaryNumberOfPatients = "陽性患者人数"
 
 type (
 	PatientSummaryData struct {
@@ -55,38 +56,22 @@ type (
 )
 
 func patientsSummary(df *dataframe.DataFrame, dtUpdated time.Time, dtEnd time.Time) (*PatientsSummary, error) {
-	dfSelected := df.Select(keyPatientsSummaryDateOfPublicate)
+	dfSelected := df.Select([]string{keyPatientsSummaryDateOfPublicate, keyPatientsSummaryNumberOfPatients})
 	if df.Err != nil {
 		return nil, df.Err
 	}
 
-	// 日付ごとにカウントアップ
-	maps := make(map[string]int)
+	var dataList []PatientSummaryData
 	for _, v := range dfSelected.Maps() {
-		dateOfPublicate, ok := v[keyPatientsSummaryDateOfPublicate].(string)
+		date, _ := v[keyPatientsSummaryDateOfPublicate].(string)
+		number, ok := v[keyPatientsSummaryNumberOfPatients].(int)
 		if !ok {
 			return nil, errors.New("unable to cast patients summary date of publicate to string")
 		}
-		num := maps[dateOfPublicate]
-		num++
-		maps[dateOfPublicate] = num
-	}
-
-	// 2020-01-29 から 指定日までの 日ごとの配列を作成
-	dtStart, _ := time.Parse("2006-01-02", "2020-01-29")
-	diffDate := dtEnd.Sub(dtStart)
-	days := int(diffDate.Hours()) / 24
-	var dataList = make([]PatientSummaryData, days+1)
-
-	// 2020-01-29 から 指定日までの 日ごとデータを作成して配列にセット
-	i := 0
-	for d := dtStart; d.Unix() < dtEnd.Unix(); d = d.AddDate(0, 0, 1) {
-		keyDate := d.Format("2006-01-02")
-		var data PatientSummaryData
-		data.Date = keyDate + "T08:00:00.000Z"
-		data.Subtotal = maps[keyDate]
-		dataList[i] = data
-		i++
+		dataList = append(dataList, PatientSummaryData{
+			Date:     date,
+			Subtotal: number,
+		})
 	}
 
 	ps := &PatientsSummary{

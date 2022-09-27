@@ -14,7 +14,7 @@ import (
 )
 
 // クエリパラメータが無かった場合のデフォルト
-const defaultTypes = "main_summary:221309_hamamatsu_covid19_patients,main_summary:221309_hamamatsu_covid19_patients_summary,patients:221309_hamamatsu_covid19_patients,patients_summary:221309_hamamatsu_covid19_patients,inspection_persons:221309_hamamatsu_covid19_test_people,contacts:221309_hamamatsu_covid19_call_center"
+const defaultTypes = "main_summary:221309_hamamatsu_covid19_patients,main_summary:221309_hamamatsu_covid19_patients_summary,patients:221309_hamamatsu_covid19_patients,patients_summary:221309_hamamatsu_covid19_patients_summary,inspection_persons:221309_hamamatsu_covid19_test_people,contacts:221309_hamamatsu_covid19_call_center"
 
 // APIアドレス
 const opendataApiUrl = "https://www.city.hamamatsu.shizuoka.jp/api/odpf/opendata/v1"
