@@ -6,6 +6,10 @@ WORKDIR $PROJECT_ROOTDIR
 
 COPY package.json yarn.lock $PROJECT_ROOTDIR
 
+RUN apk update && \
+    apk add --no-cache chromium && \
+    rm -f /var/cache/apk/*
+
 RUN yarn install
 
 COPY . $PROJECT_ROOTDIR
