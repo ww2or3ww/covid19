@@ -4,10 +4,14 @@ package csv2json
 陽性患者数
 
 csv
-No,全国地方公共団体コード,都道府県名,市区町村名,公表_年月日,曜日,発症_年月日,患者_居住地,患者_年代,患者_性別,患者_職業,患者_状態,患者_症状,患者_渡航歴の有無フラグ,退院済フラグ,備考
-1,221309,静岡県,浜松市,2020-03-28,土,,浜北区,,男性,自営業,軽症,,0,1,
-2,221309,静岡県,浜松市,2020-04-01,水,2020-03-24,中区,30歳代,男性,会社員,軽症,,0,1,
-
+No,全国地方公共団体コード,都道府県名,市区町村名,公表_年月日,曜日,陽性患者人数,死亡者人数
+1,221309,静岡県,浜松市,2020-01-29,水,0,0
+2,221309,静岡県,浜松市,2020-01-30,木,0,0
+3,221309,静岡県,浜松市,2020-01-31,金,0,0
+:
+603,221309,静岡県,浜松市,2021-09-22,水,9,0
+604,221309,静岡県,浜松市,2021-09-23,木,21,0
+605,221309,静岡県,浜松市,2021-09-24,金,3,0
 json
   "patients_summary": {
     "date": "2021/06/12 15:01",
@@ -42,6 +46,7 @@ import (
 )
 
 const keyPatientsSummaryDateOfPublicate = "公表_年月日"
+const keyPatientsSummaryNumberOfPatients = "陽性患者人数"
 
 type (
 	PatientSummaryData struct {
@@ -55,38 +60,25 @@ type (
 )
 
 func patientsSummary(df *dataframe.DataFrame, dtUpdated time.Time, dtEnd time.Time) (*PatientsSummary, error) {
-	dfSelected := df.Select(keyPatientsSummaryDateOfPublicate)
+	dfSelected := df.Select([]string{keyPatientsSummaryDateOfPublicate, keyPatientsSummaryNumberOfPatients})
 	if df.Err != nil {
 		return nil, df.Err
 	}
 
-	// 日付ごとにカウントアップ
-	maps := make(map[string]int)
+	var dataList []PatientSummaryData
 	for _, v := range dfSelected.Maps() {
-		dateOfPublicate, ok := v[keyPatientsSummaryDateOfPublicate].(string)
+		date, ok := v[keyPatientsSummaryDateOfPublicate].(string)
 		if !ok {
-			return nil, errors.New("unable to cast patients summary date of publicate to string")
+			return nil, errors.New("unable to cast data")
 		}
-		num := maps[dateOfPublicate]
-		num++
-		maps[dateOfPublicate] = num
-	}
-
-	// 2020-01-29 から 指定日までの 日ごとの配列を作成
-	dtStart, _ := time.Parse("2006-01-02", "2020-01-29")
-	diffDate := dtEnd.Sub(dtStart)
-	days := int(diffDate.Hours()) / 24
-	var dataList = make([]PatientSummaryData, days+1)
-
-	// 2020-01-29 から 指定日までの 日ごとデータを作成して配列にセット
-	i := 0
-	for d := dtStart; d.Unix() < dtEnd.Unix(); d = d.AddDate(0, 0, 1) {
-		keyDate := d.Format("2006-01-02")
-		var data PatientSummaryData
-		data.Date = keyDate + "T08:00:00.000Z"
-		data.Subtotal = maps[keyDate]
-		dataList[i] = data
-		i++
+		number, ok := v[keyPatientsSummaryNumberOfPatients].(int)
+		if !ok {
+			return nil, errors.New("unable to cast data")
+		}
+		dataList = append(dataList, PatientSummaryData{
+			Date:     date,
+			Subtotal: number,
+		})
 	}
 
 	ps := &PatientsSummary{
