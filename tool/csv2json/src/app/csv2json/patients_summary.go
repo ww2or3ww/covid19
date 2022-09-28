@@ -59,26 +59,28 @@ type (
 	}
 )
 
-func patientsSummary(df *dataframe.DataFrame, dtUpdated time.Time, dtEnd time.Time) (*PatientsSummary, error) {
+func patientsSummary(df *dataframe.DataFrame, dtUpdated time.Time, dtEnd time.Time) (*PatientsSummary, int, error) {
+	totalCount := 0
 	dfSelected := df.Select([]string{keyPatientsSummaryDateOfPublicate, keyPatientsSummaryNumberOfPatients})
 	if df.Err != nil {
-		return nil, df.Err
+		return nil, 0, df.Err
 	}
 
 	var dataList []PatientSummaryData
 	for _, v := range dfSelected.Maps() {
 		date, ok := v[keyPatientsSummaryDateOfPublicate].(string)
 		if !ok {
-			return nil, errors.New("unable to cast data")
+			return nil, 0, errors.New("unable to cast data")
 		}
 		number, ok := v[keyPatientsSummaryNumberOfPatients].(int)
 		if !ok {
-			return nil, errors.New("unable to cast data")
+			return nil, 0, errors.New("unable to cast data")
 		}
 		dataList = append(dataList, PatientSummaryData{
 			Date:     date,
 			Subtotal: number,
 		})
+		totalCount += number
 	}
 
 	ps := &PatientsSummary{
@@ -86,5 +88,5 @@ func patientsSummary(df *dataframe.DataFrame, dtUpdated time.Time, dtEnd time.Ti
 		Data: dataList,
 	}
 
-	return ps, nil
+	return ps, totalCount, nil
 }

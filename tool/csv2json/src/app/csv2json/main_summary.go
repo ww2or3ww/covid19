@@ -148,9 +148,46 @@ func mainSummary(df *dataframe.DataFrame, dtUpdated time.Time) (*MainSummary, er
 	return m, nil
 }
 
+func getEmptyMainSummary(dtUpdated time.Time) *MainSummary {
+	m := &MainSummary{
+		Date: dtUpdated.Format("2006/01/02 15:04"),
+		Children: []MainSummaryData{
+			{
+				Attr:  "陽性患者数",
+				Value: 0,
+				Children: []MainSummaryData{
+					{
+						Attr:  "入院中",
+						Value: 0,
+						Children: []MainSummaryData{
+							{
+								Attr:  "軽症・中等症",
+								Value: 0,
+							},
+							{
+								Attr:  "重症",
+								Value: 0,
+							},
+						},
+					},
+					{
+						Attr:  "退院",
+						Value: 0,
+					},
+					{
+						Attr:  "死亡",
+						Value: 0,
+					},
+				},
+			},
+		},
+	}
+
+	return m
+}
+
 // [検査陽性者の状況] の 死亡者数 を [陽性患者数csv] からカウントして取得する。
 // ([検査陽性患者の属性csv]だけで死亡者を表現すると、死亡者の特定に繋がってしまうため)
-// また、退院数から死亡者数を減算する。
 func mainSummaryTry2Merge4Deth(df *dataframe.DataFrame, mainSummary *MainSummary) error {
 	var numberOfDeth = 0 // 死亡者数
 	dfSelected := df.Select(keyMainSummaryNumberOfDeath)
@@ -168,9 +205,6 @@ func mainSummaryTry2Merge4Deth(df *dataframe.DataFrame, mainSummary *MainSummary
 
 	// 死亡の値を設定
 	mainSummary.Children[0].Children[2].Value = numberOfDeth
-
-	// 退院の値から死亡の値を減算
-	mainSummary.Children[0].Children[1].Value -= numberOfDeth
 
 	return nil
 }

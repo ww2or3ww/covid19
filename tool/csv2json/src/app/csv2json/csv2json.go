@@ -77,16 +77,18 @@ func (c2j *Csv2Json) Process(apiAddress string, queryStrPrm string) (*Result, er
 		}
 
 		switch key {
-		case "main_summary":
-			if r.MainSummary == nil {
-				r.MainSummary, err = mainSummary(csvData.DfCsv, csvData.DtUpdated)
-			} else {
-				err = mainSummaryTry2Merge4Deth(csvData.DfCsv, r.MainSummary)
-			}
-		case "patients":
-			r.Patients, err = patients(csvData.DfCsv, csvData.DtUpdated)
 		case "patients_summary":
-			r.PatientsSummary, err = patientsSummary(csvData.DfCsv, csvData.DtUpdated, c2j.csvAccessor.GetTimeNow())
+			totalCount := 0
+			r.PatientsSummary, totalCount, err = patientsSummary(csvData.DfCsv, csvData.DtUpdated, c2j.csvAccessor.GetTimeNow())
+			if err != nil {
+				r.HasError = true
+				setEmptyStructToResult(key, r)
+				logger.Errors(key, err)
+				continue
+			}
+			r.MainSummary = getEmptyMainSummary(csvData.DtUpdated)
+			err = mainSummaryTry2Merge4Deth(csvData.DfCsv, r.MainSummary)
+			r.MainSummary.Children[0].Value = totalCount
 		case "inspection_persons":
 			r.InspectionPersons, err = inspectionPersons(csvData.DfCsv, csvData.DtUpdated)
 		case "contacts":
@@ -110,6 +112,8 @@ func (c2j *Csv2Json) Process(apiAddress string, queryStrPrm string) (*Result, er
 
 		logger.Infof("%s time = %d milliseconds", value, time.Since(timeStart).Milliseconds())
 	}
+
+	r.Patients = getEmptyPatients(dtLastUpdate)
 
 	r.LastUpdate = dtLastUpdate.Format("2006/01/02 15:04")
 

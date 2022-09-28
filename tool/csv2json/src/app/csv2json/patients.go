@@ -82,6 +82,14 @@ type (
 	}
 )
 
+func getEmptyPatients(dtUpdated time.Time) *Patients {
+	p := &Patients{
+		Date: dtUpdated.Format("2006/01/02 15:04"),
+		Data: make([]PatientData, 0),
+	}
+	return p
+}
+
 func patients(df *dataframe.DataFrame, dtUpdated time.Time) (*Patients, error) {
 	dfSelected := df.Select([]string{keyPatientsDay, keyPatientsCity, keyPatientsResidence, keyPatientsAge, keyPatientsSex, keyPatientsDischarge})
 	if df.Err != nil {
